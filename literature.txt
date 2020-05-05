@@ -1,0 +1,39 @@
+Literature Review:
+
+The impacts of water scarcity are likely to be extensive and universal, 
+since water is fundamental for life and directly or indirectly supports all economic activity. 
+The consumption of water is increasing at a global rate more than two times greater than that for population increase in the last century, 
+and more regions are surpassing the limit at which water can be supplied sustainably \parencite{FAOwebsite}. 
+Two-thirds of the world's population is expected to face water shortages by 2025. 
+Although water scarcity is a fairly new idea it will change policy-making for both rich and undeveloped nations \parencite{Guarino2015}.\\
+
+The idea of scarcity is open to more than one interpretation and rather difficult to define as it implies different dimensions or facets. 
+Scarcity needs to be firstly understood as a relative concept, so an imbalance between supply and demand that varies according to local conditions. 
+Next it must be understood, that water scarcity is primarily dynamic. 
+Water scarcity intensifies with an increasing demand for water paired with the decreasing quantity and quality of the resource \parencite{FAOwebsite}.\\
+
+São Paulo, Brazil; Southern California; Chennai, India; and Cape Town,
+South Africa are all recent examples of areas facing water crises which impacted local societies and economies significantly \parencite{CDP2015}\\
+
+Water Crises is ranked, based on likelihood and possible impacts, among the top global risks by the World Economic Forum's Global Risk Report 2019. 
+Due to the global climate crisis, economic development and population growth, 
+by 2030 the world's water withdrawals are predicted to exceed global renewable supplies by as much as 2,680 cubic kilometres annually \parencite{Strong2020}\\
+
+The negligence placed on water resources places society, businesses, and the environment under dire harm \parencite{CDP2017}. 
+Freshwater availability has a volatile impact on GDP growth within countries, especially those in developing regions. %cite Coping with the curse of
+freshwater variability
+In regions where water was previously abundant, such as East Asia and Central Africa, water will become scarce unless action is taken soon. 
+In already water scarce regions such as the Middle East and the Sahel in Africa the shortage of water supply will only increase. 
+Due to water-related impacts on agricultures, health and incomes, 
+the GDP growth rates of these regions could decline by as much as 6\% by 2050 \parencite{WB2016}. 
+However, the World Bank has estimated that the decline in regional GDP can be evaded through more efficient allocation and policies.\\ 
+The Sustainable Development Goal (SDG) 6, set out in the 2030 Agenda by the United Nations %cite world sdg's,
+ provides a good point of reference when estimating the current state of water management and scarcity that a country is facing.
+We will be looking to find a basic estimate of the current implication of the SDG 6 in South Africa and to possibly estimate which are the areas that 
+this region should look to address first.\\
+In 2015, companies and countries committed to the Sustainable Development Goals (SDG's) including SDG 6, 
+which asks member nations to ensure availability and sustainable management of water and sanitation for all? by 2030 \parencite{SDG2015}.\\ 
+
+The private sector has emulated country commitments to SDG 6 through increasing corporate commitment to water stewardship, which is: 
+the use of water that is socially and culturally equitable, environmentally sustainable and economically beneficial,
+ achieved through a stakeholder-inclusive process that involves and catchment-based actions \parencite{AWS2019}.\\

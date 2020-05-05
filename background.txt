@@ -1,0 +1,35 @@
+Background:
+
+Climate change has been a topic of great interest in recent years: first with the Hyogo Framwork for Action, which was subsequently replaced by
+the Sendai Framework for Action and finally the Paris Agreement and the Sustainable Development Goals. All of these reports, manuals and agreements have been
+hosted and developed through the United Nations conferences. %cite the sendai framework and the hyogo framework documents. 
+The general global consensus is that most natural disasters are worsened by the effects of climate change.  
+The attention the topic receives is due to its serious impact on the environment and people, 
+as well as the threat it poses to economic stability %cite the DRR report.\\ 
+
+The effects of climate change are hard to quantify in general and especially hard to financially quantify. 
+The tough task of calculating estimates as to how much investment is needed to combat climate change and
+then where to invest it is under constant debate. There are a number of global funds with overlapping agendas that compete for 
+money from the private and public sectors and who have overly complex systems that countries in need are asked to engage with to recieve funds. %cite fund paper
+The difficulties are in seperating effects that can be attributed to climate change from general political and institutional mismanagement. In short,
+deciding who is responsible for climate change is yet a further barrier to solving this international issue.
+Despite this ther are some known effects that can be linked to climate change. Heatwaves lead to reduced productivity and disruptions in the workplace, 
+while cyclones, hurricanes and typhoons cause serious devastation and leave millions of people in absolute poverty. 
+The effects of most disasters are more serious in lower income countries as these negative effects are longer lasting and the relief
+and aid availabe to people affected by disasters in these areas is minimal. %cite the GAR
+Climate change is a currently pressing issue as our current agricultural and industrial practices are set to increase the relative costs associated with 
+an increase in temperatures, increased volatility of natural water supplies and an increase in the number of natural disasters that the world 
+is currently facing. %cite GAR (find out which chapter)
+If we don't do something immediately, climate change could push 100 million more people into poverty by 2030, is the warning given by the World Bank. 
+Droughts lead to serious water scarcity issues and diminish the world's food source, increasing the already complicated task of feeding the world population, 
+which is expected to reach 10 billion by 2050 \parencite{WPP2019}.\\
+
+It is argued that climate change will have shocking consequences \parencite{Stern2007} 
+while others only see climate change as a minor irritation \parencite{Mendelsohn2000}. 
+However, there is no disputing that the twenty-first century will witness the impact of two irreversible movements: 
+population growth and climate change. 
+
+Within the broader field of climate change and all the real-world impacts it is estimated to have, water scarcity is one of the more pressing 
+issues in the Sub-sarahan region. %cite four billion people 
+With an increase in population growth in Africa, and in turn urbanization, comes an upturn in demand for water. 
+These concerns are worsened due to the impacts of climate change creating increasingly uncertain rainfall patterns across the globe.\\ %cite uncharted waters 
