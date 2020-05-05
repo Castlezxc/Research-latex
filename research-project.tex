@@ -15,9 +15,10 @@
 \usepackage{amsthm}
 \usepackage{graphicx}
 \usepackage{setspace}
-\doublespacing
-
-\makeatletter
+\usepackage[backend=bibtex, style=authoryear]{biblatex}
+%\bibliography{refs}
+\addbibresource{refs.bib}
+\usepackage{csquotes}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
 %% Because html converters don't know tabularnewline
@@ -27,7 +28,7 @@
   {\textcolor{note_fontcolor}\bgroup\ignorespaces}
   {\ignorespacesafterend\egroup}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-\usepackage{amsmath,epsfig,natbib,pstricks,pst-text,pst-node,pst-plot,amssymb,wrapfig,threeparttable,rotating}
+\usepackage{amsmath,epsfig,pstricks,pst-text,pst-node,pst-plot,amssymb,wrapfig,threeparttable,rotating}
 
 \makeatother
 
@@ -116,28 +117,28 @@ This document contains the proposal for the research project undertaken by Kevin
 
 
 \section{Background}
-(focus on climate change as a whole and how it is an issue)\\
+%(focus on climate change as a whole and how it is an issue)
 Climate change has been a topic of great interest in recent years. The attention the topic receives is due to its serious impact on the environment and people, as well as the threat it poses to economic stability.\\ 
 
-Heatwaves lead to reduced productivity and disruptions in the workplace. While cyclones, hurricanes and typhoons cause serious devastation and leave millions of people in absolute poverty. ?If we don?t do something immediately, climate change could push 100 million more people into poverty by 2030? is the warning given by the World Bank. Droughts lead to serious water scarcity issues and diminish the world's food source, increasing the already complicated task of feeding the world population, which is expected to reach 10 billion by 2050 (World Population Prospects 2019, United Nations Organisation).\\
+Heatwaves lead to reduced productivity and disruptions in the workplace. While cyclones, hurricanes and typhoons cause serious devastation and leave millions of people in absolute poverty. If we don't do something immediately, climate change could push 100 million more people into poverty by 2030, is the warning given by the World Bank. Droughts lead to serious water scarcity issues and diminish the world's food source, increasing the already complicated task of feeding the world population, which is expected to reach 10 billion by 2050 \parencite{WPP2019}.\\
 
-It is argued that climate change will have shocking consequences (Stern et al. 2006) while others only see climate change as a minor irritation (Mendelsohn et al. 2000a). However, there is no disputing that the twenty-first century will witness the impact of two irreversible movements ? population growth and climate change. With an increase in population growth comes an upturn in demand for water and with the extra strain of climate change, rainfall is expected to become more uncertain bringing forward the topic of water scarcity.\\ 
+It is argued that climate change will have shocking consequences \parencite{Stern2007} while others only see climate change as a minor irritation \parencite{Mendelsohn2000}. However, there is no disputing that the twenty-first century will witness the impact of two irreversible movements: population growth and climate change. With an increase in population growth, comes an upturn in demand for water and with the extra strain of climate change, rainfall is expected to become more uncertain bringing forward the topic of water scarcity.\\ 
  
 \section{Literature Review}
-(Focus on water scarcity and research on its impacts and other models and studies done to quantify its impacts)\\
-The impacts of water scarcity are likely to be extensive and universal, since water is fundamental for life and directly or indirectly supports all economic activity. The consumption of water is increasing at a global rate more than two times greater than that for population increase in the last century, and more regions are surpassing the limit at which water can be supplied sustainably (Food And Agriculture Organization Of The United Nations). Two-thirds of the world?s population is expected to face water shortages by 2025. Although water scarcity is a fairly new idea it will change policy-making for both rich and undeveloped nations. (Global Risk Insights 2016)//
+%(Focus on water scarcity and research on its impacts and other models and studies done to quantify its impacts)
+The impacts of water scarcity are likely to be extensive and universal, since water is fundamental for life and directly or indirectly supports all economic activity. The consumption of water is increasing at a global rate more than two times greater than that for population increase in the last century, and more regions are surpassing the limit at which water can be supplied sustainably \parencite{FAOwebsite}. Two-thirds of the world?s population is expected to face water shortages by 2025. Although water scarcity is a fairly new idea it will change policy-making for both rich and undeveloped nations \parencite{Guarino2015}.\\
 
-The idea of scarcity is open to more than one interpretation and rather difficult to define as it implies different dimensions or facets. Scarcity needs to be firstly understood as a relative concept, so an imbalance between supply and demand that varies according to local conditions. Next it must be understood, that water scarcity is primarily dynamic. Water scarcity intensifies with an increasing demand for water paired with the decreasing quantity and quality of the resource (Food And Agriculture Organization Of The United Nations).\\
+The idea of scarcity is open to more than one interpretation and rather difficult to define as it implies different dimensions or facets. Scarcity needs to be firstly understood as a relative concept, so an imbalance between supply and demand that varies according to local conditions. Next it must be understood, that water scarcity is primarily dynamic. Water scarcity intensifies with an increasing demand for water paired with the decreasing quantity and quality of the resource \parencite{FAOwebsite}.\\
 
-São Paulo, Brazil; Southern California; Chennai, India; and Cape Town, South Africa are all recent examples of areas facing water crises which impacted local societies and economies significantly (CDP 2015; Otto and Schleifer 2018; Palanichamy 2019).\\
+São Paulo, Brazil; Southern California; Chennai, India; and Cape Town, South Africa are all recent examples of areas facing water crises which impacted local societies and economies significantly \parencite{CDP2015}\\
 
-Water Crises is ranked, based on likelihood and possible impacts, among the top global risks by the World Economic Forum?s Global Risk Report 2019. Due to the global climate crisis, economic development and population growth, by 2030 the world?s water withdrawals are predicted to exceed global renewable supplies by as much as 2,680 cubic kilometres annually (Achieving Abundancy 2020). \\
+Water Crises is ranked, based on likelihood and possible impacts, among the top global risks by the World Economic Forum's Global Risk Report 2019. Due to the global climate crisis, economic development and population growth, by 2030 the world?s water withdrawals are predicted to exceed global renewable supplies by as much as 2,680 cubic kilometres annually \parencite{Strong2020}\\
 
-The negligence placed on water resources places society, businesses, and the environment under dire harm. (CDP 2017) In regions where water was previously abundant, such as East Asia and Central Africa, water will become scarce unless action is taken soon- and in already water scarce regions such as the Middle East and the Sahel in Africa the shortage of water supply will only increase. Due to water-related impacts on agricultures, health and incomes, the GDP growth rates of these regions could decline by as much as 6% by 2050 (World Bank 2016). However, the World Bank has estimated that the decline in regional GDP can be evaded through more efficient allocation and policies.\\ 
+The negligence placed on water resources places society, businesses, and the environment under dire harm \parencite{CDP2017}. In regions where water was previously abundant, such as East Asia and Central Africa, water will become scarce unless action is taken soon - and in already water scarce regions such as the Middle East and the Sahel in Africa the shortage of water supply will only increase. Due to water-related impacts on agricultures, health and incomes, the GDP growth rates of these regions could decline by as much as 6\% by 2050 \parencite{WB2016}. However, the World Bank has estimated that the decline in regional GDP can be evaded through more efficient allocation and policies.\\ 
 If we aren't using the SDG data then we can remove this SDG information ? I think this info would still be relevant to set some kind of a goal for what it would mean to remove water scarcity as an issue facing SA. Maybe make some comments on how far away we are currently? (But that might require some policy analysis which could be a bit outside of the scope currently)\\
-In 2015, companies and countries committed to the SDGS ? Sustainable Development Goals ? including SDG 6, which asks member nations to ?ensure availability and sustainable management of water and sanitation for all? by 2030 (United Nations 2015).\\ 
+In 2015, companies and countries committed to the Sustainable Development Goals (SDG's) including SDG 6, which asks member nations to ensure availability and sustainable management of water and sanitation for all? by 2030 \parencite{SDG2015}.\\ 
 
-The private sector has emulated country commitments to SDG 6 through increasing corporate commitment to water stewardship, which is ?the use of water that is socially and culturally equitable, environmentally sustainable and economically beneficial, achieved through a stakeholder-inclusive process that involves and catchment-based actions? (Alliance for Water Stewardship 2019).\\
+The private sector has emulated country commitments to SDG 6 through increasing corporate commitment to water stewardship, which is ?the use of water that is socially and culturally equitable, environmentally sustainable and economically beneficial, achieved through a stakeholder-inclusive process that involves and catchment-based actions \parencite{AWS2019}.\\
 
 
 \section{Model}
@@ -158,9 +159,7 @@ I have seen some interesting comments on the different supply-side and demand-si
 One technique in particular could be a water rights system where water is still supplied at an affordable/cheap price but limits are placed on farms or firms usage of water and then they are able to trade these rights if they need more supply or have an oversupply. This system comes with significant implementation costs and legal and governmental cooperation to put it in place. It is a working system in Spain, however.
 
 \newpage
-
-\bibliographystyle{plain}
-\bibliography{BibliographyDatabase}
+\printbibliography
 
 \newpage{}
 

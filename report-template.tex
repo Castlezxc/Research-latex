@@ -15,6 +15,8 @@
 \usepackage{amsthm}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage[backend=bibtex, style=authoryear]{biblatex}
+\addbibresource{BibliographyDatabase.bib}
 \doublespacing
 
 \makeatletter
@@ -36,14 +38,14 @@
 \trivlist
 \itemindent\parindent
 \item[\hskip\labelsep\scshape #1]\ignorespaces
-}{%
+}{
 \endtrivlist\@endpefalse
 }
 \providecommand{\proofname}{Proof}
 \fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-\usepackage{amsmath,epsfig,natbib,pstricks,pst-text,pst-node,pst-plot,amssymb,wrapfig,threeparttable,rotating}
+\usepackage{amsmath,epsfig,pstricks,pst-text,pst-node,pst-plot,amssymb,wrapfig,threeparttable,rotating}
 
 \makeatother
 
@@ -257,8 +259,7 @@ honest summary of the research.
 
 \newpage
 
-\bibliographystyle{plain}
-\bibliography{BibliographyDatabase}
+\printbibliography
 
 \newpage{}
 
