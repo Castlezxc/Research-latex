@@ -1,0 +1,1 @@
+This repository contains the text and latex files for the research project. The drafts branch is used for editing or adding new sections to the main document. Text files contain the document in seperate parts for ease of editing by adding these to word or grammarly and the .tex file contains the most recent deliverable as it will appear in the submission.
