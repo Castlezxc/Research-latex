@@ -15,7 +15,7 @@
 \usepackage{amsthm}
 \usepackage{graphicx}
 \usepackage{setspace}
-\usepackage[backend=bibtex, style=authoryear]{biblatex}
+\usepackage[backend=biber, style=apa]{biblatex}
 %\bibliography{refs}
 \addbibresource{refs.bib}
 \usepackage{csquotes}
@@ -36,7 +36,7 @@
 
 \begin{document}
 
-\title{The economic impacts of water scarcity and understanding the costs of unsustainable water management practices}
+\title{The economic impacts of water scarcity: understanding the costs of unsustainable water management practices}
 
 \author{Kevin Hendriks 17043779\\ 
 	Danae Pavlou 17021856\vspace{0.5cm}\\
@@ -45,15 +45,15 @@ Submitted in partial fulfillment of the degree BSc(Hons) Actuarial Sciences\vspa
 Supervisor: S Hossain\vspace{2cm}\\
 Department of Actuarial Sciences, University of Pretoria\vspace{0.5cm}\\
 \includegraphics[width=5cm]{UPlogohighres}\vspace{0.5cm}\\
-September}
+8 May 2020}
 
 \date{}
 
 \maketitle
 \newpage{}
 \begin{abstract}
-Short summary of the research proposed. This should be a two to three
-paragraphs long and should fully describe the content and contributions
+Short summary of the research proposed. This will be a two to three
+paragraphs long and aims to fully describe the content and contributions
 of the research report.
 
 \newpage{}
@@ -90,17 +90,6 @@ submitted at this or any other tertiary institution.
 
 Date
 
-\begin{comment}
-Edit all italics with your details and sign on the solid lines once
-the final document is printed and submitted. 
-\end{comment}
-
-\newpage{}
-
-\section*{Acknowledgements}
-
-Add acknowledgements here (not compulsory) e.g. bursaries received. 
-
 \newpage{}
 
 \tableofcontents{}
@@ -119,128 +108,50 @@ The topic proposed relates to the economic impacts of water scarcity and underst
 
 \section{Background}
 %(focus on climate change as a whole and how it is an issue)
-Climate change has been a topic of great interest in recent years: first with the Hyogo Framwork for Action, which was subsequently replaced by
-the Sendai Framework for Action and finally the Paris Agreement and the Sustainable Development Goals. All of these reports, manuals and agreements have been
-hosted and developed through the United Nations conferences. %cite the sendai framework and the hyogo framework documents. 
-The general global consensus is that most natural disasters are worsened by the effects of climate change.  
-The attention the topic receives is due to its serious impact on the environment and people, 
-as well as the threat it poses to economic stability %cite the DRR report.\\ 
+Climate change has been a topic of great interest in recent years: first with the Hyogo Framework for Action, which was subsequently replaced by the Sendai Framework for Action \parencite{Sendai2015} and finally the Paris Agreement \parencite{Farid2016} and the Sustainable Development Goals \parencite{SDG2015}. All of these reports, manuals and agreements have been hosted and developed through the United Nations or International Monetary Fund conferences.The general global consensus is that the effects of climate change worsen most natural disasters. The attention the topic receives is due to its severe impact on the environment and people, as well as the threat it poses to economic stability \parencite{UNDRR2015}.\\ 
 
-The effects of climate change are hard to quantify in general and especially hard to financially quantify. 
-The tough task of calculating estimates as to how much investment is needed to combat climate change and
-then where to invest it is under constant debate. There are a number of global funds with overlapping agendas that compete for 
-money from the private and public sectors and who have overly complex systems that countries in need are asked to engage with to recieve funds. %cite fund paper
-The difficulties are in seperating effects that can be attributed to climate change from general political and institutional mismanagement. In short,
-deciding who is responsible for climate change is yet a further barrier to solving this international issue.
-Despite this ther are some known effects that can be linked to climate change. Heatwaves lead to reduced productivity and disruptions in the workplace, 
-while cyclones, hurricanes and typhoons cause serious devastation and leave millions of people in absolute poverty. 
-The effects of most disasters are more serious in lower income countries as these negative effects are longer lasting and the relief
-and aid availabe to people affected by disasters in these areas is minimal. %cite the GAR
-Climate change is a currently pressing issue as our current agricultural and industrial practices are set to increase the relative costs associated with 
-an increase in temperatures, increased volatility of natural water supplies and an increase in the number of natural disasters that the world 
-is currently facing. %cite GAR (find out which chapter)
-If we don't do something immediately, climate change could push 100 million more people into poverty by 2030, is the warning given by the World Bank. 
-Droughts lead to serious water scarcity issues and diminish the world's food source, increasing the already complicated task of feeding the world population, 
-which is expected to reach 10 billion by 2050 \parencite{WPP2019}.\\
+The effects of climate change are hard to quantify in general and especially hard to quantify financially. The onerous task of calculating estimates as to how much investment is needed to combat climate change and then where to invest it is under constant debate. There are several global funds with overlapping agendas that compete for money from the private and public investors and who have overly complex systems that countries in need have to engage with to receive funds \parencite{Amerasinghe2017}. The difficulties are in separating climate change effects from general political and institutional mismanagement. In short, deciding who is responsible for climate change is yet a further barrier to solving this international issue. Despite this, some known effects are generally attributed to climate change. Heatwaves lead to reduced productivity and disruptions in the workplace, while cyclones, hurricanes and typhoons cause severe devastation and leave millions of people in absolute poverty.  The effects of most disasters are more severe in lower-income countries as these adverse effects are longer lasting, and the relief and aid available to people affected by disasters in these areas are minimal \parencite{GAR2015}. \\
 
-It is argued that climate change will have shocking consequences \parencite{Stern2007} 
-while others only see climate change as a minor irritation \parencite{Mendelsohn2000}. 
-However, there is no disputing that the twenty-first century will witness the impact of two irreversible movements: 
-population growth and climate change. 
+Climate trends should be forcing us to evaluate our current agricultural and industrial practices. These practices are increasing the long-term costs of climate change. Reports around the world are highlighting trends in increasing temperatures, increasing volatility of natural water supplies and increasing numbers of natural disasters \parencite{GAR2015}. If we do not do something immediately, climate change could push 100 million more people into poverty by 2030, is the warning given by the World Bank. Droughts lead to serious water scarcity issues and diminish the world's food source, increasing the already complicated task of feeding the world population, which forecasts predict to reach 10 billion by 2050 \parencite{WPP2019}.\\
 
-Within the broader field of climate change and all the real-world impacts it is estimated to have, water scarcity is one of the more pressing 
-issues in the Sub-sarahan region. %cite four billion people 
-With an increase in population growth in Africa, and in turn urbanization, comes an upturn in demand for water. 
-These concerns are worsened due to the impacts of climate change creating increasingly uncertain rainfall patterns across the globe.\\ %cite uncharted waters 
+Some parties argue that climate change will have shocking consequences \parencite{Stern2007} while others only see climate change as a minor irritation \parencite{Mendelsohn2000}. However, there is no disputing that the twenty-first century will witness the impact of two irreversible movements: population growth and climate change. Within the broader real-world impacts of climate change, water scarcity is one of the more pressing issues in the Sub-Sarahan region \parencite{Mekonnen2016}. With an increase in population growth in Africa, and in turn, increasing rates of urbanization, comes an upturn in demand for water. Increasingly uncertain rainfall patterns around the globe exacerbate the damage to human society, through increased levels of poverty, and to the environment, where droughts necessitate deforestation of historically protected regions \parencite{Damania2017}\\ 
  
 \section{Literature Review}
 %(Focus on water scarcity and research on its impacts and other models and studies done to quantify its impacts)
-The impacts of water scarcity are likely to be extensive and universal, 
-since water is fundamental for life and directly or indirectly supports all economic activity. 
-The consumption of water is increasing at a global rate more than two times greater than that for population increase in the last century, 
-and more regions are surpassing the limit at which water can be supplied sustainably \parencite{FAOwebsite}. 
-Two-thirds of the world's population is expected to face water shortages by 2025. 
-Although water scarcity is a fairly new idea it will change policy-making for both rich and undeveloped nations \parencite{Guarino2015}.\\
+The impacts of water scarcity are likely to be extensive and universal since water is fundamental for life and directly or indirectly supports all economic activity. The consumption of water is increasing at a global rate more than two times greater than that for the population increase in the last century, and more regions are surpassing the limit at which water can be supplied sustainably \parencite{FAOwebsite}. Forecasts predict that two-thirds of the world's population will face water shortages by 2025. Although water scarcity is a reasonably new idea, its management will change policy-making for both rich and undeveloped nations \parencite{Guarino2015}.\\
 
-The idea of scarcity is open to more than one interpretation and rather difficult to define as it implies different dimensions or facets. 
-Scarcity needs to be firstly understood as a relative concept, so an imbalance between supply and demand that varies according to local conditions. 
-Next it must be understood, that water scarcity is primarily dynamic. 
-Water scarcity intensifies with an increasing demand for water paired with the decreasing quantity and quality of the resource \parencite{FAOwebsite}.\\
+The idea of scarcity is open to more than one interpretation and somewhat challenging to define as different policymakers, countries or institutions all have different perspectives on what defines a water shortage. Scarcity needs to be understood, firstly, as a relative concept. It is an imbalance between supply and demand that varies according to local conditions. Next, water scarcity is primarily dynamic as it intensifies with an increasing demand for water paired with the decreasing quantity and quality of the resource and these factors are continually changing as the economic environment within a region changes as well as a changing climate environment \parencite{FAOwebsite}.\\
 
-São Paulo, Brazil; Southern California; Chennai, India; and Cape Town,
-South Africa are all recent examples of areas facing water crises which impacted local societies and economies significantly \parencite{CDP2015}\\
+São Paulo, Brazil; Southern California; Chennai, India; and Cape Town, South Africa are all recent examples of areas facing water crises which impacted local societies and economies significantly \parencite{CDP2015}. Water crises are ranked, based on likelihood and possible impacts, among the top global risks by the World Economic Forum's Global Risk Report 2019. Due to the global climate crisis, economic development and population growth, by 2030 the world's water withdrawals are predicted to exceed global renewable supplies by as much as 2,680 cubic kilometres annually \parencite{Strong2020}\\
 
-Water Crises is ranked, based on likelihood and possible impacts, among the top global risks by the World Economic Forum's Global Risk Report 2019. 
-Due to the global climate crisis, economic development and population growth, 
-by 2030 the world's water withdrawals are predicted to exceed global renewable supplies by as much as 2,680 cubic kilometres annually \parencite{Strong2020}\\
+The general negligence towards the management of water resources places society, businesses, and the environment under dire harm \parencite{CDP2017}. Freshwater availability has a volatile impact on GDP growth within countries, especially those in developing regions \parencite{Hall2014}. In regions where water was previously abundant, such as East Asia and Central Africa, water will become scarce unless those responsible take action. In already water-scarce regions such as the Middle East and the Sahel in Africa, the shortage of water supply will only increase. Water-related impacts on agriculture, health and incomes could see the GDP growth rates of these regions decline by as much as 6\% by 2050 \parencite{WB2016}. However, the World Bank has estimated that there is a need for more efficient allocation and policies around water resources to avoid this decline in regional GDP.\\ 
 
-The negligence placed on water resources places society, businesses, and the environment under dire harm \parencite{CDP2017}. 
-Freshwater availability has a volatile impact on GDP growth within countries, especially those in developing regions. %cite Coping with the curse of
-freshwater variability
-In regions where water was previously abundant, such as East Asia and Central Africa, water will become scarce unless action is taken soon. 
-In already water scarce regions such as the Middle East and the Sahel in Africa the shortage of water supply will only increase. 
-Due to water-related impacts on agricultures, health and incomes, 
-the GDP growth rates of these regions could decline by as much as 6\% by 2050 \parencite{WB2016}. 
-However, the World Bank has estimated that the decline in regional GDP can be evaded through more efficient allocation and policies.\\ 
-The Sustainable Development Goal (SDG) 6, set out in the 2030 Agenda by the United Nations %cite world sdg's,
- provides a good point of reference when estimating the current state of water management and scarcity that a country is facing.
-We will be looking to find a basic estimate of the current implication of the SDG 6 in South Africa and to possibly estimate which are the areas that 
-this region should look to address first.\\
-In 2015, companies and countries committed to the Sustainable Development Goals (SDG's) including SDG 6, 
-which asks member nations to ensure availability and sustainable management of water and sanitation for all? by 2030 \parencite{SDG2015}.\\ 
-
-The private sector has emulated country commitments to SDG 6 through increasing corporate commitment to water stewardship, which is: 
-the use of water that is socially and culturally equitable, environmentally sustainable and economically beneficial,
- achieved through a stakeholder-inclusive process that involves and catchment-based actions \parencite{AWS2019}.\\
-
+In 2015, companies and countries committed to the Sustainable Development Goals (SDG's), which asks member nations to ensure availability and sustainable management of water and sanitation for all by 2030 \parencite{SDG2015}. The Sustainable Development Goal (SDG) 6, set out in the 2030 Agenda by the United Nations, provides a good point of reference when estimating the current state of water management and scarcity within a country. We will be looking to find a basic estimate of the current implication of the SDG 6 in South Africa and to possibly estimate which are the areas that this region should look to address first. The private sector has emulated country commitments to SDG 6 through increasing corporate commitment to water stewardship, which is: the use of water that is socially and culturally equitable, environmentally sustainable and economically beneficial, achieved through a stakeholder-inclusive process that involves and catchment-based actions \parencite{AWS2019}.\\
 
 \section{Model}
+
 \subsection{Research Methods}
 
-The main aim of the model will be to provide some estimated answer as to the economic impacts of climate change on South Africa. 
-	This paper will focus water scarcity as droughts and floods are the major disaster risks that the Sub-Sarahan region faces %cite CRED.\
-	The impacts and exposure to droughts are often underestimated as can be seen in the impacts of the recent drought that South Africa has experienced 
-	and the nature of droughts in general. %cite uncharted waters
-	One of the main contributing components to a drought is the rainfall patterns within a region. Places like South Africa rely on a rainy season
-	in order to meet agricultural needs for food and animal feed. Volatile rainfall patterns in combination with inappropriate water 
-	management systems can lead to worrying levels of exposure to the negative impacts of a drought.
-	There have been a number of studies that have tried to use spatial analysis to capture the rainfall patterns in specific areas and globally and
-	and mapped out when droughts and particularly wet periods have passsed. Most of these studies have used the Dellerware data to perform this analysis.
-	This paper will not try to recreate these spatial models, but will rather accept thier results and try to link these to economic immpacts.
-	The main factor that this paper will focus on as an indicator of the economic performance of a country, 
-	being South Africa in this study, will be Gross Domestic Produce (GDP).\\
-	The model will analyse the correlations between different indicators of rainfall patterns, such as precipitation, to the overall GDP of South Africa
-	over time. The model will have some callibrating periods where there have been known periods of droughts in South Africa.
-	The data for this study will come from the Dellerware data set, the Demographic and Health Surveys Program run by USAID. the EARTHSTAT database,
-	the World Bank World Development Indicators dataset and the United Nations World Population Prospects 2019 data set.\\
-	After establishing any correllations between drought indicators and economic indicators, the model will look to forecast these economic costs at least until 
-	2030, based on the United Nations 2030 Agenda, under a number of different economic and climate scenarios. This scenario forecasting will require further
-	research into the appropriate combinations of factors that could be used to create a future scenario.
+The main aim of the model will be to provide some estimated answer as to the economic impacts of climate change on South Africa. This paper will focus on water scarcity as droughts and floods are the significant disaster risks that the Sub-Sarahan region faces \parencite{CRED2019}\\
+
+Institutions often underestimated the impacts of and their exposure to droughts, as can be seen in the impacts of the recent drought that South Africa has experienced and the nature of droughts in general \parencite{Damania2017}. One of the main contributing components to a drought is the rainfall patterns within a region. Countries like South Africa rely on a rainy season in order to meet agricultural needs for food and animal feed. Volatile rainfall patterns, in combination with inappropriate water management systems, can lead to worrying levels of exposure to the negative impacts of drought. There have been several studies that have tried to use spatial analysis to capture the rainfall patterns in specific areas and globally and map out when droughts and particularly wet periods have passed. Most of these studies have used the Delaware data to perform this analysis. This paper will not try to recreate these spatial models, but will rather accept their results and try to link these to economic impacts. The main factor that this paper will focus on as an indicator of the economic performance of a country will be Gross Domestic Product (GDP).\\ 
+
+The model will analyse the correlations between different indicators of rainfall patterns, such as precipitation, to the overall GDP of a region over time. The model will have some calibrating periods where there have been known periods of droughts, such as recently in South Africa. The data for this study will come from the Delaware data set, the Demographic and Health Surveys Program run by USAID, the EARTHSTAT database, the World Bank World Development Indicators dataset and the United Nations World Population Prospects 2019 data set.\\
+
+After establishing any correlations between drought indicators and economic indicators, the model will look to forecast these economic costs at least until 2030, based on the United Nations 2030 Agenda, under several different economic and climate scenarios. This scenario forecasting will require further research into the combinations of factors that would be appropriate to create feasible future scenarios.
 
 \subsection{Possible Problems}
-	The possibility of insufficient data should not be an issue in the approach the model will try to take as all of the suggested datasets have recrods
-	going back for many years. However, the data may be somewhat inappropriate and issues around the granularity of the data may still be encountered.
-	This is to say, there may not be enough data to cover the rainfall in only one specific country as the data could be captured on a country by country
-	level. However, this does not seem to be the case through a preliminary viewing of the data sets. Some other issues that the model will have to take
-	into account will be the interference of other factors in the analysis of correlations. Examples of these external factors, external here refers
-	to being outside of a drought or other water scarcity influences, such as economic recessions. Further internal issues may be encountered while analysing
-	rising temperatures and rainfall volatility as these two factors are closesly linked and seasonal. %cite uncharted waters
+
+The possibility of insufficient data should not be an issue in the approach the model will take as all of the suggested datasets have data records over several decades. However, the data may be somewhat inappropriate, and issues around the granularity of the data may still exist. There may not be enough data to cover the rainfall in only one specific country as the data could be captured on a country by country level. However, this does not seem to be the case through a preliminary viewing of the data sets. Some other issues that the model will have to take into account will be the interference of other factors in the analysis of correlations. Examples of these external factors, external here referring to being outside of a drought or other factors of water scarcity, such as economic recessions. Further internal issues may arise in the analysis of rising temperatures and rainfall volatility as these two factors are closely linked and are both seasonal \parencite{Damania2017}.
 
 
 
 \section{Conclusion}
 
-There are a number of avenues to address water scarcity and, more broadly, cliamate change. There are several of internationally
-run funds that look to address general and specific aspects of climate change, from disaster relief to adapting new technologies.
-To adequately address all aspects of climate change will require both public and private investment in climate infrastucture and
-solutions. %cite achieving abundance 
-attempts to put a dollar figure on the private sector investment that would be needed to meet the SDG 6 laid out in the United Nations' 
-2030 Agenda. These investments would go towards infrastructure to combat access and storage of water. %cite uncharted waters
-speaks of the various shortfalls that could be addressed in public water management. A useful suggestion from this book is the use of water
-rights that can be traded through standard contracts. This paper sees a unique opportunity in South Africa to adopt this due to the strength
-of our financial sector and systems. Another supply side issue is the water dropped during transportation in water infrastructure, such as water
-pipes. It is estimated that South Africa loses around 90 billion Rand per annum due to leaks in this infrastructure. %cite water resource group
-Both of the public sector and private sector approaches would need to be implemented to adequately combat the negative effects of climate change.
+There are many avenues to address water scarcity and, more broadly, climate change. There are several internationally
+run funds that look to address general and specific aspects of climate change, from disaster relief to adopting new technologies.
+Adequately addressing all aspects of climate change will require both public and private investment in climate infrastructure and
+solutions. A report by the World Resource Institute  \parencite{Strong2020} attempts to put a dollar figure on the private sector investment that would be needed to meet the SDG 6 laid out in the United Nations' 2030 Agenda. These investments would go towards infrastructure to combat access and storage of water. Another report, by the World Bank, advises on the cost of addressing the various shortfalls in private water management \parencite{Damania2017}. A useful suggestion from this book is the use of tradable water rights that are in the form of standard contracts. This paper sees a unique opportunity in South Africa to adopt this due to the strength of our financial sector and systems. Another supply-side issue is the water dropped during transportation in water infrastructure, such as water pipes. South Africa loses around 90 billion Rand per annum due to leaks in this infrastructure \parencite{Strong2020}. Both the public sector and the private sector would need to implement these approaches to combat the adverse effects of climate change adequately.
 
 \newpage
 \printbibliography
@@ -249,5 +160,5 @@ Both of the public sector and private sector approaches would need to be impleme
 
 \section*{Appendix\addcontentsline{toc}{section}{Appendix}}
 
-Include any additional code, output or data here. 
+Additional code, output or data here. 
 \end{document}
