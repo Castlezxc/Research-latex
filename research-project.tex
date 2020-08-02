@@ -20,6 +20,7 @@
 \addbibresource{refs.bib}
 \usepackage{csquotes}
 \usepackage{gensymb}
+\usepackage{multirow}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
 %% Because html converters don't know tabularnewline
@@ -36,298 +37,913 @@
 \usepackage{babel}
 
 \begin{document}
-
-\title{Investigating the links between weather variability and agricultural GDP}
-
-\author{Kevin Hendriks 17043779\\ 
-	Danae Pavlou 17021856\vspace{0.5cm}\\
-NPN 780 Research Report\vspace{2cm}\\
-Submitted in partial fulfillment of the degree BSc(Hons) Actuarial Sciences\vspace{0.5cm}\\
-Supervisor: S Hossain\vspace{2cm}\\
-Department of Actuarial Sciences, University of Pretoria\vspace{0.5cm}\\
-\includegraphics[width=5cm]{UPlogohighres}\vspace{0.5cm}\\
-September 2020}
-
-\date{}
-
-\maketitle
-\newpage{}
-\begin{abstract}
-Short summary of the research proposed. This will be a two to three
-paragraphs long and aims to fully describe the content and contributions
-of the research report.
-
-\newpage{}
-\end{abstract}
-
-\section*{Declaration}
-
-I, \emph{Kevin Ryan Hendriks and Danae Pavlou}, declare that this essay, submitted in
-partial fulfilment of the degree \emph{BSc(Hons) Actuarial Sciences} at
-the University of Pretoria, is my own work and has not been previously
-submitted at this or any other tertiary institution. 
-
-\vspace{1cm}
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-\emph{Kevin Ryan Hendriks}
-
-\vspace{1cm}
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-\emph{Danae Pavlou}
-
-\vspace{1cm}
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-\emph{Saqib Hossain}
-
-\vspace{1cm}
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-Date
-
-\newpage{}
-
-\tableofcontents{}
-
-\listoffigures
-
-\listoftables
-
-\newpage{}
-
-\section{Introduction}
-There is a gap in the coverage of climate related financial products around  less shocking, yet still devastating, climate related disasters, specifically drought. Existing financial products in the climate sphere often deal with natural disasters that produce sudden and obvious claim events such as earthquakes or cyclones. 
-
+	
+	\title{Investigating the links between weather variability and agricultural
+		GDP}
+	
+	\author{Kevin Hendriks 17043779\\ 
+		Danae Pavlou 17021856\vspace{0.5cm}\\
+		NPN 780 Research Report\vspace{2cm}\\
+		Submitted in partial fulfillment of the degree BSc(Hons) Actuarial
+		Sciences\vspace{0.5cm}\\
+		Supervisor: S Hossain\vspace{2cm}\\
+		Department of Actuarial Sciences, University of Pretoria\vspace{0.5cm}\\
+		\includegraphics[width=5cm]{UPlogohighres}\vspace{0.5cm}\\
+		September 2020}
+	
+	\date{}
+	
+	\maketitle
+	\newpage{}
+	\begin{abstract}
+		Short summary of the research proposed. This will be a two to three
+		paragraphs long and aims to fully describe the content and contributions
+		of the research report.
+		
+		\newpage{}
+	\end{abstract}
+	
+	\section*{Declaration}
+	
+	I, \emph{Kevin Ryan Hendriks and Danae Pavlou}, declare that this essay,
+	submitted in
+	partial fulfilment of the degree \emph{BSc(Hons) Actuarial Sciences} at
+	the University of Pretoria, is my own work and has not been previously
+	submitted at this or any other tertiary institution. 
+	
+	\vspace{1cm}
+	
+	\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+	
+	\emph{Kevin Ryan Hendriks}
+	
+	\vspace{1cm}
+	
+	\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+	
+	\emph{Danae Pavlou}
+	
+	\vspace{1cm}
+	
+	\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+	
+	\emph{Saqib Hossain}
+	
+	\vspace{1cm}
+	
+	\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+	
+	Date
+	
+	\newpage{}
+	
+	\tableofcontents{}
+	
+	\listoffigures
+	
+	\listoftables
+	
+	\newpage{}
+	
+	\section{Introduction}
+	There is a gap in the coverage of climate related financial products around 
+	less shocking, yet still devastating, climate related disasters, specifically
+	drought. Existing financial products in the climate sphere often deal with
+	natural disasters that produce sudden and obvious claim events such as
+	earthquakes or cyclones. 
+	
 	\subsection{How do we address climate change?}
-	Before climate change can be addressed through national and international policies, the current status of climate change needs to be established. This has been done in many research papers and is a major focus of several international organizations. There are two different categories of policies around climate:
+	Before climate change can be addressed through national and international
+	policies, the current status of climate change needs to be established. This
+	ha been done in many research papers and is a major focus of several international
+	organizations. There are two different categories of policies around climate:
 	\begin{itemize}
-	\item Policies that try to address the changing environment, try to slow down / reduce climate change. These policies are focused around limiting human activities that contribute towards increasing the amount of carbon in the atmosphere.
-	\item Policies that look to protect communities, businesses and households from the negative impacts of climate. These look at changes in the environment and how people interact with these changes and are likely to be affected by these changes. The insurance industry is best suited to impact this side of the research question as, by nature, it is a risk-averse, defensive strategy.
+		\item Policies that try to address the changing environment, try to slow down
+		/
+		reduce climate change. These policies are focused around limiting human
+		activities that contribute towards increasing the amount of carbon in the
+		atmosphere.
+		\item Policies that look to protect communities, businesses and households
+		from
+		the negative impacts of climate. These look at changes in the environment and
+		how people interact with these changes and are likely to be affected by these
+		changes. The insurance industry is best suited to impact this side of the
+		research question as, by nature, it is a risk-averse, defensive strategy.
 	\end{itemize}
 	
-	The first looks to fight against future climate change where the second looks to defend vulnerable people against the current and future impacts of climate change. In order to do this you need to establish what the future climate trends are likely to be, but it is also important to establish the effect these trends are likely to have. Fighting an effective battle against climate change requires both of these approaches to succeed and currently there is a lack of efforts with the aim of the second bullet point above.
-
-\newpage
-
-\section{Problem Statement}
-The ideal for governments and financial institutions is to have methods of identifying which human activities contribute to climate change and by how much, then to be able to identify the climate events that are relevant to an economy and communities. Then to extend that to quantify the financial impact on the economy and various communities. Finally, to have financial products Investment projects should be aimed at preventing the loss of life and livelihoods in the case of a natural disaster or are capable of identifying / predicting the impacts of non-preventable changes in the climate, such as increasing temperatures. These models, policies and financial products are available to everyone and thus the climate related risks are spread globally.\\
-
-However currently there are few early warning systems and few financial products that focus on climate change itself rather than on natural disasters as risks. The focus of funding is on humanitarian aid after a disaster event and not on projects that aid in preventing and coping with natural disasters. Existing models that attempt to quantify the impacts of climate change on various economies are difficult to access and require special expertise in coding, economics and statistics to be able to operate, usually requiring teams to adequately cover these fields. Due to the complex nature of these models most poorer regions of the world do not have access to the expertise or technology in order to run the appropriate analysis.\\
-
-In order to try to bring what is currently available and being implemented closer to the ideal we need to explore the effects of the less violent natural phenomena as an important point that is not sufficiently addressed by the insurance or financial sector, currently. To progress in this regard, it is important to find a focal point within the many factors of climate change that can be analysed in a quantitative way. It is important to make the study as relevant as possible to regions of the world that have the most to gain from systematic improvements when it comes to handling climate change. This means that areas that have little to no climate analysis combined with large exposures to climate risk should be where the most urgency is directed when planning for future climate change mitigation.\\
-
-In order to keep climate analysis as relevant as possible to the real world, the quantifiable measures that are used to construct financial products addressing climate change should not be abstract. These measures should be easily translatable into the real economy and therefore comparable to other financial risks. You want these quantifiable measures to be used in standard risk analyses where both the likelihood of a risk event occurring as well as the financial impact of a risk event occurring are important in decisions for further action by governments and financial institutions. The aim of being understandable and relevant to a financial audience as well as comparable to other financial risks is to encourage action in this space. 
- 
-\newpage
-
-\section{Purpose statement}
-The purpose of this research project is to investigate the relationship between agricultural GDP and drought severity in South Africa. 
-
-\begin{itemize}
-\item The global region where the greatest impact from the focus of this study is possible is Africa, seeing as water is widely mismanaged and African communities are highly exposed to variance in weather conditions. 
-\item South Africa was chosen as a case study for the African continent as it has the most data coverage of the variables in this study. 
-\item GDP is chosen as a financially significant measure of the impact of climate change. 
-\item Agricultural GDP is chosen as this economic sector is most directly influenced by drought events. 
-\item Droughts represent a measurable event that is related to weather variability and is the link within the study to climate change.
-\end{itemize}
-
-Water scarcity is the point at which the two focuses of the study meet, those being the financial sector and climate change. Water scarcity is defined in terms of the supply vs the demand for water. Demand for water is driven by economic factors whereas the supply of water is an environmental factor, this provides the ideal point of departure for the research project. 
-
-\section{Research objectives}
-\begin{itemize}
-\item Isolate Agricultural GDP from the general GDP statistics 
-\item Collect measurements of drought severity
-	\begin{itemize}
-	\item Research various measurements of drought severity and pros and cons of a few different methods.
-	\end{itemize}
-\item Identify a measure of water scarcity
-\item Check the collinearity of the measurement of water scarcity and drought severity
-\item Perform linear regression on agricultural GDP and the identified measurement of drought severity.
-\end{itemize}
-	 
-\newpage
-
-\section{Literature Review}
-
-	\subsection{Climate change}
-	Climate change is a broad field that covers a lot of interlinked factors and their effect on the globe. Climate change is change in the environment related to the temperature on the earth, the weather patterns around the globe and how they are changing \parencite{Pielke2004}. 
-
-		\subsubsection{Human involvement in the process}
-		There is large-scale consensus that a host of human activities worsen either the speed of climate change or the severity of the effect it has on human activity \parencite{Min2011}. Several organisations have published documents that promise support for climate change policies and set out schemes to address the issues it causes. These include the Paris Agreement from the IMF \parencite{Farid2016}, The Sustainable Development Goals from the UN \parencite{SDG2015}, the Sendai Framework from the UN \parencite{Sendai2015}, and the Stern Review from the Treasury of Great Britain \parencite{Stern2007}.\\
-
-		\subsubsection{Environmental changes}
-		Increasing global temperatures are linked to an increase in the frequency of natural hazards \parencite{CRED2019}. These hazards range from cyclones and storms, floods and droughts to earthquakes and volcanic activity. The literature shows varying levels of support for the link between climate change and these various hazards, but there are strong lines drawn to connect climate change and weather variability \parencite{Burke2015}. This may seem insignificant to humans with all our buildings and air-conditioning, but these changes in how hot or cold the earth is at certain times of the year fundamentally changes how we survive and how our economies run.
-
-		\subsection{Humanity's climate footprint}
-		The biggest problem is the way that human activity depletes natural resources and puts out gases, mostly CO2, into the atmosphere that change the way the earth handles heat from outside our atmosphere \parencite{Solomon2009}. On top of this, the normal activities of plants and animals in recycling these gases is diminished due to destruction of natural habitats and with them, the Earth's ability to regulate its temperature. 
-
-		\subsubsection{The results of increasing CO2 emissions and increasing temperatures}
-		The result of all this gas in the atmosphere is that temperatures will rise \parencite{Solomon2009}. This changes the flow of wind on the surface and in the atmosphere of the planet as wind is a movement of hot and cold air. If wind patterns change then weather patterns will also change. Most of the natural environment is in a fine balance and when the weather changes drastically, then so too will the natural environment. The change in temperatures also affects the behaviour of the ocean, which also plays a large role in dictating weather patterns, especially storms \parencite{Dasgupta2009}.\\
-
-		All trends so far point to a greater variability in rainfall and storms \parencite{Damania2017}. There will be more rainfall in some regions and less in others. The problem here is that it is not going to be a fair distribution and so dryer places will most likely receive even less water and wetter regions will face even wetter conditions. This means that it becomes harder to predict whether rain will come and how much rain is likely to fall if a downpour does occur.
-
-	\subsection{Do changing weather and rainfall patterns affect humanity?}
-	Rainfall affects human society on three levels. Firstly, we need water to survive: to drink ourselves, to grow our food and to feed our animals. Secondly, human society must manage the water that falls on and runs through the spaces we live and work in. If this flow of water is not managed, floods or droughts occur. Both events have costs to human life as well as economic activity \parencite{CRED2019}. Finally, we use water for almost all our activities, both private and industrial \parencite{Strong2020}. Globally, our businesses and economies cannot function if they do not have water to use in daily activities. Some of these activities are more water-intensive than others, with manufacturing or mining activities being very water intensive, yet a school or office cannot run if there is no access to water. The balance between the demand for water and the supply of it is water scarcity.
-
-		\subsubsection{Economic implications}
-		Several studies link increasing rainfall variability, water scarcity, and increasing temperatures to negative economic impacts. \parencite{Burke2015} and \parencite{Dell2012} identify that rainfall and temperature variability are highly correlated and adversely effect economic growth. \parencite{Brown2013} used the Weighted Anomaly Standardized Precipitation index, which takes measurements of  rainfall inconsistency at extremes, to measure water availability. The results show that excessive or insufficient rainfall causes GDP growth rates to decrease. \parencite{Barbier2004} pays attention to 112 developing countries, finding that an increase in the use of water tends to slow the growth rates of developing countries by exploring the link between GDP growth and water utilisation rates. \parencite{Barbier2004} states that the reason for this is an increase in water utilisation does not increase productivity gains enough to outweigh the greater social and environmental costs associated with the infrastructure and organisations needed to achieve greater water security.\\
-
-		\parencite{Stern2007} and \parencite{WB2016} both highlight that climate change has a substantial impact on a number of factors, namely: growth, production, and poverty reduction. \parencite{Stern2007} suggests that the distribution and variability of water is where people will feel the most significant impact of climate change. \parencite{WB2016} shares this view, finding that the impact of climate change will be felt principally through the water cycle. 
-
-		\subsubsection{Is water scarcity a global issue?}
-		\parencite{Mekonnen2016} find that about 71\% of the world experiences water scarcity for at least 1 month in any given year. They conducted a study that aims to address the underestimation of the impact of water scarcity by previous modelling exercises. The study states that due to the variation of rainfall patterns, it is inappropriate to use annually aggregated data to estimate the number of people impacted by water scarcity. The findings from the study are that half a billion people in the world face severe water scarcity throughout the year.
-
-	\subsection{Dealing with water scarcity}
-	Thanks to globalization, the world deals with water scarcity through trade \parencite{Damania2017}. Countries that have high levels of water scarcity import goods that they would not be able to support with local water levels. This trading action is called an implicit trade of water and it occurs whenever water is involved in the production of a good. This includes agricultural goods, most forms of manufacturing -- from the motor industry to the textile industry -- and minerals and ores through mining activities.
-
-		\subsubsection{If these mechanisms exist to deal with water scarcity, what is the problem?}
-		On a global level, there is enough water to meet the demand for water, however, the distribution of water availability and rainfall paints a different picture within any given region \parencite{Mekonnen2016}. Countries have their own water scarcity issues and balance their demand and supply through the implicit water trade, however, these systems can become overwhelmed when there is a prolonged period where there is less rainfall in a region than its economic sectors and water reserves can cope with. This happens when the balance between the demand for water changes faster than the political and economic systems can keep up with. 
-
-		\subsubsection{Intensifying water cycles}
-		\parencite{Stern2007} and \parencite{WB2016} predict the water cycle will intensify as climate change alters water availability, and many areas will see increased severity of droughts and floods. Arid areas, like Southern Africa, are likely to have increased water scarcity and \parencite{Barrios2010} as well as \parencite{Brown2011} found that irregular rainfall can have a substantial impact on economic growth in sub-Saharan Africa.
-
-		\subsubsection{Drought}
-		Drought disasters are some of the worst of all disaster types, especially in Africa, and threaten the livelihood and development of rural and urban populations. Droughts occur over longer periods of time than most other natural disasters. Droughts are not restricted or predictably in certain geographic areas such as fault lines or river basins for earthquakes or floods. There are four different classifications for droughts. Meteorological drought is when there is a shortage of rainfall leading to a shortage of water.  Agricultural drought occurs when there is insufficient water availability or groundwater to sustain normal farming activity. Hydrological drought is related to insufficient surface and subsurface water levels based on a statistical average. Finally, socio-economic drought occurs when economic goods are in short supply because of weather-related shocks \parencite{UNDRR2015}.\\
-
-		There are issues with estimating the impact of droughts in terms of human capital or economic losses as mortality related to droughts often occurs through avenues such as a lack of food or civil unrest \parencite{UNDRR2015}. This creates a shortage of data around the links of drought to its impacts on human society. \\
-
-		Despite these challenges, studies have shown that droughts and floods are the disaster types that have the widest reaching and the worst impacts, especially on the African continent. The natural disaster that makes up the most deaths that are related to natural disasters is droughts. In Africa, 46\% of deaths caused by natural hazards result from drought related conditions. Drought makes up the highest proportion of the number of people that are affects by natural hazards. Of the people in Africa that experience the effect of natrual hazards, 80\% of them are drought-related \parencite{CRED2019}.\\
-
-		With this as the state of the world, it can be said that addressing water scarcity with a focus on efficient agriculture and drought resilience should be the first point of order when making policy decisions about climate change \parencite{Strong2020}. 
-
-		\subsubsection{Disincentives for investment}
-		Despite several publications warning of the increasing risks posed by droughts, there is a disproportionate lack of investments in measures to reduce these risks \parencite{UNDRR2015}. The current situation creates concerns for investors and the poor disaster management in many developing regions is a disincentive for investment \parencite{Hall2014}.\\
-
-		\parencite{Amerasinghe2017} highlights that although there are a number of international funds that are aimed at funding projects that bring technology and infrastructure to deal with climate change as well as disaster risk reduction, these funds often miss their mandates of helping those countries most in need. Firstly, much of the financial aid provided to poorer regions is in the form of humanitarian aid rather that in the form of risk reduction systems and infrastructure \parencite{UNDRR2015}. Secondly, application systems around becoming accredited and gaining access to many of these international funds are inconsistent and biased to countries with better political and financial systems in the first place. These countries have an advantage with access to knowledge around the terms of funding from these international funds and how to design investment policies that satisfy these terms \parencite{Amerasinghe2017}. 
-
-	\subsection{How are these systems overwhelmed?}
-	That is a complex question. There are several supply and demand side factors that have a role in this situation occurring. 
-
-		\subsubsection{The treatment of water as an economic good}
-		The water cycle is multidimensional and thus it makes it difficult to address issues of water scarcity within a single policy \parencite{Damania2020}. At the source, water faces problems associated with a public good. Water policies are required to protect water sources. At the next stage of the water cycle, investment is required to convert water into a private good using infrastructure such as pipes and reservoirs. However, water is also seen as a human right and thus a merit good and so enough water needs to be made available at inexpensive prices. These definitions are contradictory and so there is no single price that would concurrently be able to meet both objectives.\\ 
-
-		The distortion of water prices leads to inefficient and wasteful use of the resource, inflicting higher costs on the economy, society, and the environment. The marginal value of water for different uses varies substantially, as the price paid by residential, industry and agriculture users differ \parencite{WB2016}. The price of water rarely reflects its economic value, or the costs associated with treating and transporting it. Thus, a price that is too low and allows cheap water access may encourage inefficient water use and waste, compromising sustainability. Prices that are too high will mean the poor will be unable to access a resource that is a basic human right. Therefore, water prices must be able to control demand and guarantee unbiased access.
-
-		\subsubsection{The supply of water }
-		A single network must be used to supply water to consumers, as multiple water systems will be too costly to build. The network must have a single owner or monopolist that is subject to regulation to safeguard adequate access. However, the provider of the service has more knowledge than the regulator regarding its own cost structure and efficiency level. This presents an information asymmetry, which gives the provider an advantage and creates the opportunity to inflate costs and provide inadequate services. Thus, policies and regulations need to identify these asymmetries, and ensure fair treatment of both the service provider, through a reasonable rate of return, and the customer, through affordable and quality services \parencite{Damania2020}.
-
-		\subsubsection{The difficulties of isolating economic impacts}
-		Approaches have been advanced that try to directly deduce whether rainfall variability and water availability have a statistically evident impact on economic growth. However, it is impossible to identify the precise impacts as well as to quantify these impacts because of the complex interactions within an economy. Much of the literature published focuses on how water variations and availability impact certain sectors of the economy and find that the economic indicators are negatively impacted by adverse rainfall events -- such as floods and droughts. If one sector faces water supply shocks, this can have a ripple effect throughout the economy. Thus, evaluating one sector alone will not provide substantial evidence of the impacts on aggregated measures of economic activity like GDP \parencite{Damania2020}.
-
-		\subsubsection{Population and urbanization strains}
-		The World Economic Forum highlighted that there is an increasing demand for freshwater which is influenced by increasing global population. This creates an issue as high levels of water scarcity are often found in areas with high population density \parencite{Mekonnen2016}. Africa faces population growth issues that, if disaster risks are not managed properly, will increase the proportion of the global population that regularly experiences natural hazards. The proportion of the global population in Africa is expected to grow to 26\% in 2050, from 13\% in 2000 \parencite{CRED2019}. The number of people in these regions is expected to increase, however, a more specific consequence of this trend is that the likelihood of urbanization in areas exposed to natural hazards will also be increased. An example of water scarcity impacting urbanization is the 2010 drought in Syria, which lead to the migration of unemployed farm workers into the cities. This movement of people and the burden on the cities also contributed to the civil war around that time \parencite{Hall2014}.\\
-
-		Resource shortages in urban areas and increases in population density creates a higher exposure to any single disaster and sets up conditions that are ripe for civil conflict and disease. Another concern with urbanization in Africa is that over 60\% of Africa urban population live in slums or suffer from some form of deprivation that defines a slum. This means that these populations face a lack of clean water, sanitation facilities, durable housing, and sufficient living space. All these conditions set the perfect scene for disease outbreak or other losses of human life were a natural disaster to strike. The African continent experiences the highest frequency of epidemics, mostly due to the presence of malaria and HIV/AIDS in the region. However, poor hygiene practices and food insecurity heighten the impact of these biohazards \parencite{UNDRR2015}. 
-
-		\subsubsection{Agricultural irrigation}
-		The agricultural sector of developing nations usually makes up a large proportion of national income \parencite{Johnston1961}. The World Economic Forum includes the expansion of agricultural irrigation as a factor in increasing demand for freshwater \Parencite{Mekonnen2016}. The World Bank draws a connection between rainfall variability, specifically dry weather shocks, and increased deforestation and conversion of land into cropland \parencite{Damania2020}. The World Bank indicates that there is a lack of education around the disaster risk reduction in much of the developing world. This leads to avoidable land degradation and a reduction in farming efficiency, which erodes agricultural incomes but also negatively impacts these regions' exposure to weather shocks and their capability to recover from them \parencite{UNDRR2015}.\\
-
-		Access to irrigation can create inappropriate crop choices. More water is generally allocated to the agricultural sector and it is often made available to the user at virtually no cost, leading to the overuse of water \parencite{Damania2017}. The opportunity cost of supplying water to agriculture, industry and residential sectors is often unrelated to the price paid for the water by sectors \parencite{Strong2020}. Water for agriculture is normally cheaper than for urban consumption, and although this can be explained, to an extent, by the difference in the product quality, the fundamental reason for this mismatched price is because the market does not use the economic value of water when allocating it. \parencite{Mekonnen2016} also find that areas with high levels of irrigation compared to the natural water availability also experience high levels of water scarcity. This can be seen in areas such as the Limpopo Basin in South Africa, where, despite being a river basin, the area creates water scarcity by having countercyclical water consumption patterns. These unsustainable water practices are expected to lead to dryer riverbeds and decreased groundwater. Overall, this increases the likely impacts when a drought does occur where the agricultural sector experiences reduced harvests and a loss of income to farmers.
-
-	\subsection{Welfare impacts and the far-reaching implications for individual income}
-	There is an increasing amount of evidence demonstrating that rainfall shocks can have long-term economic effects on human capital. According to \parencite{WB2016} there is a long-term effect on health, human capital, and education, especially in young children because of a lack of water or the having no other option but to use contaminated water. Through these factors, climate produced water shocks hinder development and poverty reduction. This proves to be true especially when rainfall shocks result in health impacts that adversely affect young children or when families are unable to invest in their children due to a lack of income \parencite{Almond2011}. A rainfall shock can significantly decrease a family's income when income depends on favourable rainfall patterns. This lack of income could cascade into foetuses and infants developing nutritional deficits which could have dire consequences in the long run. This could extend the cycle of poverty, as health concerns and malnutrition brought on by floods or droughts can impact education and thus future employment.\\
-
-	Water scarcity and climate change can have a long-term effect on the health and economic potential of rural farmers residing in developing countries but also middle-class workers from middle-income countries. \parencite{Maccini2009} conducted a survey of Indonesian rural farmers and found that persons, especially women, who in their first year of life experienced rainfall shocks also achieved less education, earned lower incomes and married people who earned lower incomes. Interestingly, recent evidence demonstrates that these results could impact middle-class workers from middle-income countries. A study concerning middle class workers in Ecuador shows that if rainfall shocks and higher temperatures were experienced while still in the uterus, the results would see the child experience reduced formal sector earnings 20 to 60 years later \parencite{Fishman2015}.
-
-	\subsection{Is there anything being done to combat these issues?}
-	\parencite{UNDRR2015} speaks about several measures that are being undertaken to improve Disaster Risk Reduction, however, highlights that these systems are neither well integrated into the social systems within countries nor across country borders. There are several key issues that hinder the progress of Disaster Risk Reduction policies within the African continent. Most of the early warning systems in Africa are managed by external organisations, such as NGOs. There is a lack of initiatives to collect useful or comparable data on meteorological patterns or on vulnerability factors. This would be an issue in an effort to address any policy decisions, however, since weather related changes are poorly understood and disaster events are extreme events, this lack of data is a massive set back to addressing these challenges \parencite{Hall2014}. Finally, there are only a few specialised institutions set up to research and fund projects aimed at increasing preparedness and strengthening capacity to manage climate risks.\\
-	 
-	There is also a fundamental issue with how humans deal with disaster risk mitigation on a global scale and that is that investment in disaster risk reduction usually only happens reactively. That is to say that there is a pattern of investing in large-scale disaster prevention infrastructure only after a major event has already occurred \parencite{Hall2014}. Considering the magnified exposure to disaster risks in Africa as well as the potential post-disaster, humanitarian crises, work together with the above systematic concerns to set tremendous boundaries to sustainable development in the region \parencite{UNDRR2015}.Disaster Risk Reduction aims at reducing the economic and social strain of natural hazards
-
-
-
-	\subsection{How do we Predict these challenges}
-	Much of the literature that explores the effect of climate change on economic growth uses similar models, including Integrated Assessment Models and Computable General Equilibrium (CGE) models. The results of these models are that the effect of climate change on the global economy are meaningful, and that the negative consequences are felt worst in developing countries.  
-
-		\subsubsection{Integrated Assessment Models and Computable General Equilibrium (CGE) models}
-		Integrated Assessment Models that have tried to quantify the impacts of climate change work on aggregate modelling, sometimes only including one good produced and consumed in each economy. There are fewer models that represent a computable general equilibrium structure. CGE models are useful in reflecting more sector-specific impacts and differences in the economic structure.\\
-
-		A computable general equilibrium model could alternatively be used to determine how water impacts the economy. When statistical information is lacking, CGE models project the consequences of hypothesised scenarios. They provide projections of the consequence of hypothesised scenarios in a stylized depiction of the economy, not predictions and forecasts.  The models are determined by computational constraints and data availability and are based on a series of assumptions. These models aim to provide clarity on the extent and direction of change and how adverse consequences could be alleviated or heightened by policies. 
-
-		\subsubsection{Examples of IA Models that use CGE techniques}
-
-			\paragraph{Shared Socioeconomic Pathways (SPPs) and CGE Models}
-			\parencite{WB2016} suggests that water scarcity hinders growth and development, with the greatest water scarcity experienced in the Middle East, Central Asia, parts of South Asia and North Africa. The study exhibits how significant action is needed to prevent climate related water issues from having adverse implications for global economic growth. The model explores how water scarcity could constrain economic growth by comparing two extreme scenarios with SSP1 and SSP3. SSP1 represents positive outlook and SSP3 describes a world comprising of low adaptation, restricted economic growth, and high emissions. The Shared Socio-economic Pathways (SSPs) are narratives that describe stylised development scenarios and define changes in technology, lifestyles, demographics, policy, and the economy. Water supply projections from a range of hydrological models are integrated into a CGE which preforms simulations, roughly showing the inter-relation of economic sectors and how a shock in one sector could cascade through to the whole economy.
-
-			\paragraph{ENVISAGE}
-			\parencite{Roson2012} used an integrated assessment model (ENVISAGE) to show that the long run impacts of climate change are substantial, especially in poorer countries. They link a large part of GDP loss in North African and the Middle East to a decrease in labour productivity, followed by water scarcity. The model assesses the economic impacts of various climate factors, but cites water scarcity as the reason for the negative welfare effect on the Middle East and North Africa, which are expected to be -16.14\% by the end of the century. This model evaluates the general magnitude and distribution per region of the impacts, as well as the consequences of each impact on overall income and welfare variation. The ENVISAGE model is more sophisticated some previous models and uses improved parameter estimates. It uses a recursive dynamic approach, with adaptive expectations. This allows more climate change impacts to be considered. The model compares two different scenarios, one that ignores any climate change and one that accounts for climate change and its impacts.
-
-			\paragraph{SSPs and RCPs}
-			\parencite{Kompas2018} extended a CGE trade model to show that the effect of global warming, although varying by region and economic sectors, increases in the long run and are severely worse in poor, African and Asian nations. The model considers the many effects of increasing temperature on GDP growth and GDP levels for 139 countries. The model, which is fully disaggregated, was extended to account for the effect of various Shared Socioeconomic Pathways (SSPs) and Representative Concentration Pathways (RCPs) on global temperature. This approach predicts a 1 - 4\degree C increase in global temperatures. The GDP loss in these areas and all areas near the equator is the most significant. At a global warming of 3\degree C, the expected global potential loss is estimated at US\$9,593.71 billion at 2100. When global warming reaches 4\degree C losses are estimated to increase to US\$23,149.18 billion.  
-
-		\subsubsection{Comparable Results}
-		The results using the ENVISAGE model are comparable to findings by \parencite{Kompas2018}. ENVISAGE bases results on only 15 regions, which unavoidably averages outcomes, where Kompas, Van H and Nhu Che use a larger dimensional model, which accounts for 139 countries. \parencite{Roson2012} found that by the end of the century, an increase in global temperature of 4.79\degree C will mean parts of Asia lose 12.6\% of their GDP and the Middle East and North Africa lose 10.3\%.  \parencite{Kompas2018}  show that for a global temperature increase of 4\degree C, South East Asian countries can lose as much as 21\% of their GDP yearly and finds a GDP loss of 26.6\% yearly for developing countries in Africa.\\
-
-		The fundamental finding is that the poor will suffer the most from the impacts of climate change. Another key takeaway is that water scarcity will be where the impact of climate change will most significantly be felt, which agrees with \parencite{Stern2007}.
-
-		\subsubsection{Inconsistencies of results }
-		There are studies that show that rainfall or water availability has no strong and significant effect on economic growth, which is contradicting when considering the robust micro econometric indication of the extensive effect of rainfall and water availability on important economic indicators. \parencite{Stern2007} considers how a change in climate could impact people, the environment and the potential for economic growth and development in various regions. It discerns that the effects across the global will be different, where some regions may benefit from small temperature rise. But if temperature increases rise above 2-3\degree C, which is anticipated in the future, most countries will feel the effect and global growth will suffer.\\
-
-		It has been suggested that a reason for the discrepancy of results is due to the statistical approaches used, which place attention on how water availability or rainfall impacts economic growth at the national level. \parencite{Briant2010} showed that this is due to spatial averaging over large units, which disguises variability and explains why impacts of rainfall on GDP are found to be fragile.  If a part of a country is experiencing floods while the other is experiencing droughts, averaging over the country may result in normal rainfall, thus inadequately capturing the spatial variation in water availability, and the varying effects it has on a country. However, at disaggregated spatial scales the analysis shows that rainfall variability has a substantial impact on economic growth \parencite{Damania2019}. 
-
-		\subsubsection{The limitations of CGE Models}
-		When data is sparse the CGE approach is arguably the best available method, CGE models do however have limitations. They assume that it is easy to substitute factors, for example when a shock results in an input like water being reduced, it is assumed that a factor such as capital can replace the input and that this occurs at no loss of production. This is not the case in practice, as capital and water are not the same, and where substitution is possible it will not be perfect and will involve time and transition costs. CGE models struggle to deal with externalities as well as the key features of the hydrological cycle, which is vital when water is concerned. Clearly integrating water into a CGE proves difficult because of the complex nature of water and the absence of information on water use. Water is renewable and often reused, as the water cycle is iterative. Most CGE models overlook the complex traits of water. Thus, it is challenging to identify and quantify fully, the various complex relations between water and the economy, so CGE model results should be used with care.
-
-	\subsection{The potential benefits of improving water management practices}
-	\parencite{WB2016} concludes that  judicious water management can partially nullify the adverse growth impacts the model's fundamental discovery is that prudent water-management policies can greatly protect growth, increase wealth, and consequently increase resilience to climate stress. Efficient water pricing and the reallocation of water are two such policies. By introducing more efficient water prices, while still implementing policies that protect the poor, sufficient water can be conserved thus ensuring that enough water is available to meet basic needs. Secondly, water efficiency would be attained if water were used more productively within sectors and through the allocation of water to higher value usages. A restructuring of water rights and water governance mechanisms is needed. An abundance of CGE models show that efficient allocation can lead to meaningful benefits. \parencite{Hassan2011} showed that efficient water allocation in South Africa could enhance the agricultural GDP by approximately 4.5\% annually, further \parencite{Roson2017a} show that inefficient allocation results in estimated global losses of 6\% of GDP.\\
-
-	Education programs around disaster risk reduction can lead to overall social benefits. \parencite{UNDRR2015} suggests that to improve education around environmental hazards, the general education systems in many poor areas would need to be improved. This may lead to a more educated population in general, including around gender equality and land use.\\ 
-
-	The most realistic and significant improvements towards water sustainability and the SDG 6 are in the agricultural sector  \parencite{Strong2020}. There are several studies mentioned in this literature review that link rainfall variability and drought to negative economic impacts. Thus, there is scope for insurance and social safety nets to prevent much of these negative impacts by protecting the incomes of the agricultural sector \parencite{UNDRR2015}. There are a number of supply side approaches mentioned by \parencite{Damania2017}, but these are harder to implement without national buy-in and access to funding, as described by \parencite{Amerasinghe2017}, or without social awareness through disaster risk education and early warning systems \parencite{UNDRR2015}. Thus, there it is important for the private sector to step up and a the ability to classify droughts and to quantify appropriate financial actions based on the severity of their impacts on communities. 
+	The first looks to fight against future climate change where the second looks
+	to defend vulnerable people against the current and future impacts of climate
+	change. In order to do this you need to establish what the future climate
+	trends
+	are likely to be, but it is also important to establish the effect these trends
+	are likely to have. Fighting an effective battle against climate change
+	requires
+	both of these approaches to succeed and currently there is a lack of efforts
+	with the aim of the second bullet point above.
 	
 	\newpage
+	
+	\section{Problem Statement}
+	The ideal for governments and financial institutions is to have methods of
+	identifying which human activities contribute to climate change and by how
+	much, then to be able to identify the climate events that are relevant to an economy
+	and communities. Then to extend that to quantify the financial impact on the
+	economy and various communities. Finally, to have financial products Investment
+	projects should be aimed at preventing the loss of life and livelihoods in the
+	case of a natural disaster or are capable of identifying / predicting the
+	impacts of non-preventable changes in the climate, such as increasing
+	temperatures. These models, policies and financial products are available to
+	everyone and thus the climate related risks are spread globally.\\
+	
+	However currently there are few early warning systems and few financial
+	products that focus on climate change itself rather than on natural disasters as risks.
+	The focus of funding is on humanitarian aid after a disaster event and not on
+	projects that aid in preventing and coping with natural disasters. Existing
+	models that attempt to quantify the impacts of climate change on various
+	economies are difficult to access and require special expertise in coding,
+	economics and statistics to be able to operate, usually requiring teams to
+	adequately cover these fields. Due to the complex nature of these models most
+	poorer regions of the world do not have access to the expertise or technology
+	in order to run the appropriate analysis.\\
+	
+	In order to try to bring what is currently available and being implemented
+	closer to the ideal we need to explore the effects of the less violent natural
+	phenomena as an important point that is not sufficiently addressed by the
+	insurance or financial sector, currently. To progress in this regard, it is
+	important to find a focal point within the many factors of climate change that
+	can be analysed in a quantitative way. It is important to make the study as
+	relevant as possible to regions of the world that have the most to gain from
+	systematic improvements when it comes to handling climate change. This means
+	that areas that have little to no climate analysis combined with large
+	exposures
+	to climate risk should be where the most urgency is directed when planning for
+	future climate change mitigation.\\
+	
+	In order to keep climate analysis as relevant as possible to the real world,
+	the
+	quantifiable measures that are used to construct financial products addressing
+	climate change should not be abstract. These measures should be easily
+	translatable into the real economy and therefore comparable to other financial
+	risks. You want these quantifiable measures to be used in standard risk
+	analyses
+	where both the likelihood of a risk event occurring as well as the financial
+	impact of a risk event occurring are important in decisions for further action
+	by governments and financial institutions. The aim of being understandable and
+	relevant to a financial audience as well as comparable to other financial risks
+	is to encourage action in this space. 
+	
+	\newpage
+	
+	\section{Purpose statement}
+	The purpose of this research project is to investigate the relationship between
+	agricultural GDP and drought severity in South Africa. 
+	
+	\begin{itemize}
+		\item The global region where the greatest impact from the focus of this study
+		is possible is Africa, seeing as water is widely mismanaged and African
+		communities are highly exposed to variance in weather conditions. 
+		\item South Africa was chosen as a case study for the African continent as it
+		has the most data coverage of the variables in this study. 
+		\item GDP is chosen as a financially significant measure of the impact of
+		climate change. 
+		\item Agricultural GDP is chosen as this economic sector is most directly
+		influenced by drought events. 
+		\item Droughts represent a measurable event that is related to weather
+		variability and is the link within the study to climate change.
+	\end{itemize}
+	
+	Water scarcity is the point at which the two focuses of the study meet, those
+	being the financial sector and climate change. Water scarcity is defined in
+	terms of the supply vs the demand for water. Demand for water is driven by
+	economic factors whereas the supply of water is an environmental factor, this
+	provides the ideal point of departure for the research project. 
+	
+	\section{Research objectives}
+	\begin{itemize}
+		\item Isolate Agricultural GDP from the general GDP statistics 
+		\item Collect measurements of drought severity
+		\begin{itemize}
+			\item Research various measurements of drought severity and pros and cons of
+			a
+			few different methods.
+		\end{itemize}
+		\item Identify a measure of water scarcity
+		\item Check the collinearity of the measurement of water scarcity and drought
+		severity
+		\item Perform linear regression on agricultural GDP and the identified
+		measurement of drought severity.
+	\end{itemize}
+	
+	\newpage
+	
+	\section{Literature review}
+	
+	\subsection{Climate change}
+	The literature explores climate change effects on economic growth, finding that
+	climate change and higher temperatures will adversely impact GDP in the long
+	run. A recurring theme is that the poor, developing countries will feel these
+	adverse impacts more severely than affluent countries. It is also found that
+	water is the principal means through which the world will feel the effects of
+	climate change. According to the \parencite{Water2018} more than 2 million
+	people currently live in areas that are experiencing high water stress, and
+	this is expected to worsen as the effects of climate change intensify and population
+	growth increases the demand for water. It is anticipated that climate change
+	will cause hydrological cycles to deepen, causing global changes in
+	precipitation patterns and increased extreme events \parencite{Bates2008}.\\
+	
+	Climate change is made up of environmental factors such as the temperature on
+	the Earth, weather patterns around the globe and how these factors are changing
+	\parencite{Pielke2004}. Climate change has received international recognition
+	as one of the most pressing issues in today?s world. Below is a table showing
+	international policy documents and funds that show the global presence of
+	climate change:
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{ |l|l|l| }
+			\hline
+			Publication & Organisation & Published\\
+			\hline
+			The Sustainable Development Goals & The United Nations & 2015\\
+			The Paris Agreement & The International Monetary Fund & 2015\\
+			The Stern Review & The Treasury of Great Britain & 2007\\
+			\hline
+			Fund Name & Type of fund & Established\\
+			\hline
+			Green Climate Fund & Multilateral fund & 2013\\
+			Special Climate Change Fund & Multilateral fund & 2001\\
+			Climate Investment Funds & Multilateral fund & 2008\\
+			\hline
+		\end{tabular}
+		\label{table:papers}
+	\end{table}
+	
+	Many of the impacts of climate change are attributed to increases in greenhouse
+	gas emissions that lead to rising global temperatures \parencite{Solomon2009}.
+	There are several studies that show the negative economic effects of
+	temperature increases, as summarised in the table below:
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{ |l|l|l|l|}
+			\hline
+			Author & Increase & Economic impact & Region\\
+			\hline
+			\cite{Tol2018} & 2.5\degree C & Income loss of 1.4\% & Global\\
+			\cite{Farid2016} &  3\degree C & GDP loss of 2\% & Global\\
+			\hline
+			\multirow{2}{6cm}{\cite{Kompas2018}} &  \multirow{2}{1.5cm}{4\degree C} & GDP
+			loss of 21\% & South East Asia\\
+			&  & GDP loss of 26.6\% & Africa\\
+			\hline
+			\multirow{2}{6cm}{\cite{Roson2012}} &  \multirow{2}{1.5cm}{4.79\degree C} &
+			GDP loss of 12.6\% & Asia\\
+			& & GDP loss of 10.3\% & Middle East \& North Africa\\
+			\hline
+		\end{tabular}
+		\label{table:climate_impact}
+	\end{table}
+	
+	\parencite{Tol2018}, who reviewed the 27 published estimates of the total
+	economic impact of climate change currently available, also found that the
+	developing countries were more severely affected by climate change and that the
+	total economic impacts of climate change are negative. However, \parencite{Tol2018} does state that the impact of climate change on economic growth is not well understood and could be too optimistic. The limited 27
+	estimates of the total economic impact of climate change make it challenging to
+	draw a definitive conclusion.  There are 11 estimates that assume a warming of
+	2.5\degree C, 3 estimates are positive while 8 are negative, showing that it is
+	unclear whether climate change will lead to a net welfare gain or loss. When
+	the 27 estimates are considered as a whole, they indicate that moderate warming
+	leads to net positive welfare, while any greater temperature increases lead to
+	negative net impacts on welfare. Although the estimates show great uncertainty,
+	they suggest that negative impacts are more probable in the long term and that
+	if climate change doubles, its impacts more than double, thus making the
+	impacts more than linear. 
+	
+	\parencite{Tol2018} therefore finds that although the economic impact of
+	climate change in the 21st century is modest and not well understood, long-term
+	the negative impacts will outweigh the positive ones, with the poor and hot
+	developing countries being the most significantly affected by these adverse
+	impacts. The Stern Review and the Paris Agreement both highlight that the
+	impacts of climate change are poorly understood, but also agree that the
+	negative, long-term impacts of climate change will be significant, especially
+	in
+	developing regions..
+	
+	\parencite{Stern2007} suggests that the distribution and variability of water
+	is where people will most significantly feel the impact of climate change. This
+	could have substantial impact on growth, production and poverty reduction. The
+	water cycle will intensify as climate change alters water availability, and
+	manyvareas will see increased severity of droughts and floods. Arid areas, like
+	Southern Africa, are likely to have increased water scarcity and
+	\parencite{Barrios2010} and \parencite{Brown2011}found that irregular rainfall
+	can have a substantial impact on economic growth in sub-Saharan Africa.
+	\parencite{Roson2012} also suggests that water scarcity is a major reason for
+	the negative welfare effects on the Middle East and North Africa, which are
+	expected to be -16.14\% by the end of the century.
+	
+	What has been found is that although the full economic impacts and the extent
+	of these impacts is uncertain, most literature agrees that climate change in
+	the
+	long term will have a negative economic impact, although these impacts will be
+	felt differently across the globe. The fundamental finding is that the poor
+	will
+	suffer the most from the impacts of climate change, specifically through water
+	scarcity.
+	
+	\subsection{Water scarcity}
+	A rapidly changing supply of natural water is likely to have a negative effect
+	on world development by decreasing household incomes, straining economies that
+	have inefficient water usage practices and impacting health, education and
+	welfare of developing nations \parencite{WB2016}. 
+	
+	
+	There is an increasing amount of evidence demonstrating that rainfall shocks
+	can have long-term economic effects on human capital. Having no access to clean
+	water or no access to water at all has long-term effects on health, human
+	capital, and education, especially in young children \parencite{WB2016}.
+	\parencite{Almond2011} concurs with this conclusion and mentions that
+	households
+	facing health risks due to water scarcity are unable to invest in their
+	children
+	due to reductions in household incomes. A rainfall shock can significantly
+	decrease a family's income when income depends on favourable rainfall patterns,
+	such as when households rely on rain-fed agriculture to feed their families
+	and/or provide an income to satisfy their needs. This lack of income could
+	cascade into foetuses and infants developing nutritional deficits which could
+	have dire consequences in the long run. This could extend the cycle of poverty,
+	as health concerns and malnutrition brought on by floods or droughts can impact
+	education and thus future employment \parencite{Damania2017}. Thus, climate
+	related water shocks hinder development and increase poverty rates through
+	these
+	channels.  
+	
+	
+	The reach of water scarcity and climate change does not stop at the low-income
+	portions of a population and can have long-term effects on the health and
+	economic potential of rural farmers residing in developing countries as well as
+	middle-class workers from middle-income countries. \parencite{Maccini2009}
+	conducted a survey of Indonesian rural farmers and found that persons,
+	especially women, who in their rest year of life experienced rainfall shocks
+	also achieved less education, earned lower incomes and married people who
+	earned
+	lower incomes. This agrees with the view of the \parencite{WB2016},
+	\parencite{Damania2017} and \parencite{Almond2011}. Interestingly, recent
+	evidence demonstrates that these results could impact middle-class workers from
+	middle-income countries. A study concerning middle class workers in Ecuador
+	shows that if rainfall shocks and higher temperature were experienced while
+	still in the uterus, the results would see the child experience reduced formal
+	sector earnings 20 to 60 years later \parencite{Fishman2015}.
+	
+	
+	Both excessive and insufficient rainfall causes GDP growth rates to decrease.
+	\parencite{Burke2015} and \parencite{Dell2012} conclude that high temperatures
+	have adverse economic impacts. They also identified that rainfall and
+	temperature variability are highly correlated and studied the impacts of
+	climate
+	change and rainfall on the economy. \parencite{Brown2013} used the Weighted
+	Anomaly Standardized Precipitation index, which measures rainfall inconsistency
+	at extremes, in order to measure water availability. All of these studies
+	conclude that increases in temperature and weather variability increase the
+	frequency of extreme wet and dry anomalies, which negatively impact economic
+	growth, especially in agricultural regions. 
+	
+	
+	Several studies find that rainfall or water availability has no strong and
+	significant effect on economic growth, which is contradicting when considering
+	the number of studies that indicate extensive effects of rainfall and water
+	availability on economic indicators like GDP.  It has been suggested that a
+	reason for the discrepancy of results is due to the statistical approaches
+	used,
+	which place attention on how water availability or rainfall impacts economic
+	growth at the national level. \parencite{Briant2010} showed that this is due to
+	spatial averaging over large units, which disguises variability. If a part of a
+	country is experiencing floods while the other is experiencing droughts,
+	averaging over the country may result in normal rainfall, thus inadequately
+	capturing the spatial variation in water availability and the varying effects
+	it
+	has on a country. A similar argument exists when a study uses data on an
+	aggregated time scale such as using annual data. Weather variation within a
+	year
+	can disguise the extreme weather experiences over each year. However, at
+	disaggregated spatial scales the analysis shows that rainfall variability has a
+	substantial impact on economic growth \parencite{Damania2019}.
+	
+	
+	This evidence agrees with \parencite{Tol2018}, who suggests that many of the
+	estimates of the impact of climate change on various economies are optimistic.
+	Another study that highlights this underestimation of the impacts of climate
+	change and concurs with the current trend of using aggregated climate data is
+	\parencite{Mekonnen2016}. They conducted a study that suggests that around 71\%
+	of the world experiences water scarcity for at least one month in any given
+	year.
+	
+	
+	Therefore, the global economy is likely to experience the effect of climate
+	change principally through water cycles because of increasing future
+	variability
+	of extreme natural phenomena such as droughts and floods. 
+	
+	\subsection{Water management}
+	\subsubsection{The role of water management in water scarcity and climate
+		change}
+	To protect economic growth as the demand for water increases because of
+	growing populations, intensifying water usages and urbanization, so too does
+	the
+	need for good water management. Unfortunately, throughout the world, unequal
+	and
+	inefficient water management systems, that absorb large amounts of capital from
+	other areas of the economy \parencite{Barbier2004}, and a lack of information
+	pose a threat to global development by incapacitating policy responses from
+	both
+	the public and private sectors \parencite{WB2016} and \parencite{Damania2020}.
+	
+	Water scarcity and climate change bring a wave of problems to most of the
+	world and poor water management practices only act to deepen the troughs facing
+	policy makers. The Netherlands? Minister of Infrastructure and the Environment,
+	Cora van Nieuwenhuizen, stressed the importance of good water management
+	saying,
+	?After all, 90\% of climate adaptation is about water?.
+	\parencite{Cashman2018}.
+	
+	\subsubsection{Population growth and urbanization and water management}
+	Social trends around population growth and urbanization in developing regions
+	demand that adequate water management policies are prepared and implemented
+	sooner rather than later. Population growth and urbanization increase the
+	proportion of the world?s population that have exposure to natural hazards and
+	disasters as well as adding to the demand for fresh water. This is highlighted
+	by the World Economic Forum, who outline that an increasing global population
+	intensifies the demand for water. \parencite{Mekonnen2016} discusses this and
+	that high levels of water scarcity are often found in areas with high
+	population
+	density. \parencite{CRED2019} highlights the upward trend in urbanization in
+	Africa, which makes up a large part of the developing world and is expected to
+	reach up to 25\% of the global population by 2050. \parencite{UNDRR2015}
+	concludes that resource shortages in urban areas produce circumstances that are
+	ripe for civil conflict and disease. \parencite{Hall2014} draws a connection
+	between water scarcity and the migration of rural populations to urban areas
+	due
+	to a loss of livelihoods in agricultural endeavours. \parencite{UNDRR2015} goes
+	on to explain that 60\% of the African population lives in slums and sets this
+	out as a consequence of urbanization. They define a slum as lacking clean
+	water,
+	sanitation facilities, durable housing and sufficient living space.
+	\parencite{WB2016} stresses the fact that most poor populations live in drought
+	prone areas or flood basins, which further increases the likelihood of
+	experiencing a weather phenomenon as well as the potential severity of that
+	event. From an insurance perspective, \parencite{Cashman2018}, highlights that
+	rapid urbanization and increasing population densities in vulnerable areas,
+	combined with increasing standards of living have a significant effect on the
+	level of disaster losses experienced globally. All these conclusions link
+	together to produce a strong indication for the need for water to be
+	efficiently
+	managed, especially in the case of urban water infrastructure. 
+	
+	\subsubsection{The situation on the ground}
+	Currently water management policies are inefficient, and models show that if
+	they persist water scarcity will worsen where water is already limited and
+	become an issue in regions previously unbothered by water scarcity. The
+	\parencite{WB2016} predicts that by 2050 some regions could have a 6\% decline
+	in the growth rate of GDP caused by water-related losses. The impacts of water
+	scarcity and water mismanagement will be felt excessively by the poor, as they
+	often rely on rain dependent agriculture, live in drought or flood prone areas,
+	and are at risk of poor-quality water and inadequate sanitation. 
+	
+	
+	\parencite{Barbier2004} looks at 112 developing countries and explores the
+	link between GDP growth and water utilisation rates and displays that an
+	increase in the use of water tends to slow the growth rates of developing
+	countries. \parencite{Barbier2004} states that the reason for this is that an
+	increase in water utilisation does not increase productivity gains enough to
+	outweigh the greater social and environmental costs associated with the
+	infrastructure and organisations needed to achieve greater water security.
+	
+	
+	\parencite{WB2016} finds that prudent water management policies can aid in
+	protecting economic growth in developing regions. The model they use compares
+	two extreme scenarios. SSP1, represents a positive outlook and SSP3 describes a
+	world consisting of low adaptation, restricted economic growth and high
+	emissions. For each scenario, the results show that water scarcity is a
+	noteworthy hindrance to growth and development, however, adverse growth rates
+	could worsen if inefficient water-management policies are used. The report also
+	highlights that through better water-management, certain regions could see
+	their
+	GDP growth rate accelerate by 6\%. Thus, judicious water management can
+	partially nullify the adverse growth impacts. The greatest water scarcity will
+	be faced by the Middle East, Central Asia, parts of South Asia and North
+	Africa,
+	which corresponds to the results of other studies already discussed. Under the
+	?business as usual? scenario, the results of the model suggest that significant
+	action would have to be taken in order for climate related water issues to not
+	adversely impact global economic growth. 
+	
+	
+	Water is a resource that is needed directly or indirectly for the production
+	of most goods and services, yet any efforts to quantify the contribution of
+	water to total economic growth continue to be vague and ambiguous
+	\parencite{WB2016}.
+	
+	\subsubsection{Water Management Practices to respond to intensifying water
+		scarcity issues}
+	The water cycle is multidimensional and thus it makes it difficult to address
+	issues of water scarcity within a single policy. At the source, water faces
+	problems associated with a public good. Water policies are required to protect
+	water sources. At the next stage of the water cycle, investment is required to
+	convert water into a private good using infrastructure such as pipes and
+	reservoirs. However, water is also seen as a human right and thus a merit good
+	and so enough water needs to be made available at inexpensive prices. These
+	definitions are contradictory and so there is no single price that would
+	concurrently be able to meet both objectives \parencite{Damania2020}. 
+	
+	The distortion of water prices leads to an inefficient and wasteful use of the
+	resource, inflicting higher costs on the economy, society, and the environment.
+	The marginal value of water for different uses varies substantially, as the
+	price paid by residential, industry and agriculture users differ
+	\parencite{WB2016}. The price of water rarely reflects its economic value, or
+	the costs associated with treating and transporting it. Thus, a price that is
+	too low and allows cheap water access may encourage inefficient water use and
+	waste, compromising sustainability. Prices that are too high will mean the poor
+	will be unable to access a resource that is a basic human right. Therefore,
+	water prices must be able to control demand and guarantee unbiased access.
+	
+	An abundance of CGE models show that efficient allocation can lead to
+	meaningful benefits. \parencite{Hassan2011} showed that efficient water
+	allocation in South Africa could enhance the agricultural GDP by approximately
+	4.5\% annually, further \parencite{Roson2017a} show that inefficient allocation
+	results in estimated global losses of 6\% of GDP. However, efficient allocation
+	can only occur if there is an adequate management and regulation mechanism.
+	Technology that is sophisticated enough to monitor, measure and disclose the
+	water performance using unbiased metrics has not yet been realised.
+	
+	\paragraph{Technical efficiency and suitable investment}
+	
+	\parencite{Calzadilla2013} discovers that if water efficiency is improved
+	there are compound benefits, as water scarce regions benefit, and other regions
+	are encouraged to make use of water with more care. It has been shown by CGE
+	models that an improvement in the efficient use of water can tackle water
+	scarcity issues. One of the ways of encouraging both efficient allocation and
+	use of water is through pricing. Alternatively, protection against water shocks
+	could be achieved by investment. Developing countries do not have access to
+	water storage, flood control and other infrastructure that provides protection
+	against water shocks.  Thus, developing countries must be able to more
+	accurately predict when natural disaster will occur. This will require
+	investing
+	in early-warning systems and introducing institutions that have the ability to
+	transform a forecast into a warning.
+	
+	\paragraph{Water trade}
+	
+	Thanks to globalization, the world can deal with water scarcity through
+	trade. Where water is scarce and costly, water intensive goods will be imported
+	while goods with low water content will be exported. Therefore, countries that
+	have high levels of water scarcity import goods that they would not be able to
+	support with local water levels. So water is traded through the water used to
+	produce a product. This is known as the ?virtual water trade?, and it is seen
+	as
+	a way of evading water scarcity in certain regions. However, globalisation has
+	meant that production that has high water demands is often transferred to
+	developing countries who are already water scarce. It has been seen that water
+	scarcity and climate change will more adversely affect developing countries,
+	and
+	this water intensive production will only compound this
+	\parencite{Damania2017}.
+	
+	\paragraph{Increase water supply and availability}
+	
+	This could be achieved through investing in projects that increase water
+	supply, such as water storage infrastructure like dams, adequate treatment
+	plants, water recycling and reuse, desalination projects. However, for these to
+	be effective they must be paired with policies that support water efficiency
+	and
+	efficient water allocation across sectors. An increase in supply must be paired
+	with consistent safeguards in order to manage water use. If this is not done,
+	demand will rise to match the new supply level resulting in an increased level
+	of water dependence, especially in arid regions \parencite{WB2016}.
+	
+	\paragraph{Optimising water use through better planning and incentives}
+	
+	Allocating water across sectors to higher-value uses will help achieve
+	climate resilient economies that are still able to thrive in uncertain
+	climates.
+	In order to ensure future water security, water will need to be recognised at a
+	scarce and valuable productive resource. This can be realised through economic
+	instruments, like water permits and prices, that ensure the delivery of water
+	where it is more productive. Water allocations through permits give consumers
+	the right to sell or rent the water available to them. A transaction will only
+	occur if it is seen as beneficial by both the buyer and the seller, thus
+	resulting in a win-win situation for both parties involved. However, this would
+	require complex legal structures and must link up with a credible water trading
+	system \parencite{WB2016}.
+	
+	Water pricing is generally the easiest, simplest and most efficient way for
+	controlling water use, for municipal use. Placing a high price on water could
+	provide an incentive to reduce water waste. It could also reduce the municipal
+	demand on water. However, with high water prices the most vulnerable will
+	struggle to retain access, thus targeted subsidies or block tariffs would have
+	to be strategically put in place \parencite{WB2016}.
+	
+	Pricing however, is less effective and carries more complexities for
+	commercial purposes, which is the sector where most water is used. Sectors must
+	also become more efficient, which is achievable through the design and adoption
+	of new water saving technology, incentives and education. Climate Smart
+	Agriculture (CSA) and Sustainable Agricultural Intensification (SAI) are some
+	of
+	the approaches currently available, and effectively allow farms to maintain or
+	possibly increase returns while simultaneously reducing their water and energy
+	use. This is a worthwhile pursuit as \parencite{Strong2020} indicate that the
+	agricultural sector has the potential to be more sustainable at the lowest cost
+	out of all of the different sectors of the global economy. There are also
+	opportunities to alter behaviour and change water consumption through
+	education.
+	
+	\paragraph{Reducing the impact of extremes, variability and uncertainty}
+	
+	The goal will be to safeguard the world?s water supply through reaction to
+	and reduction of natural disaster impacts and increased rainfall variability
+	due
+	to climate change. The challenge is not adequate available water but rather the
+	distribution and stewardship of water. \parencite{Mekonnen2016} outline that
+	there is enough water to satisfy all demand at a global level, this water is
+	just unevenly distributed and so leaves water scarce and water dense areas.
+	Large investment in technology and infrastructure will be required to mitigate
+	the impacts of extreme events. Investment location and design must be sensibly
+	thought-out, as these investments will be irreversible and expensive. These
+	investments include seawalls, levees and dams for coastal cities, which could
+	protect them from floods and storm surges. Upgrading or introducing
+	hydro-meteorological and early-warning systems is another important investment.
+	However, these forecasts will only be useful if they are understood by the
+	users, so some investment into educating locals will be needed
+	\parencite{WB2016}.
+	
+	Crop insurance is another useful response to the growing rainfall
+	variability, especially in developing countries. It provides an incentive to
+	invest in current technologies and crops of higher value, as this insurance
+	removes the catastrophic risk of losing large investments if crops do prove
+	unsuccessful \parencite{WB2016}.
+	
+	A single network must be used to supply water to consumers, as multiple water
+	systems will be too costly to build and the network must have a single owner or
+	monopolist that is subject to regulation to safeguard adequate access. However,
+	the provider of the service has more knowledge than the regulator with regard
+	to
+	its own cost structure and efficiency level, meaning there is information
+	asymmetry present which gives the provider an advantage and creates the
+	possibility of inflated costs and inadequate services. Thus, policies and
+	regulations need to identify these asymmetries, and ensure fair treatment of
+	both the service provider, through a reasonable rate of return, and the
+	customer, through affordable and quality services. An example of how poor water
+	management systems can cost an economy is how South Africa loses around 7
+	billion Rand a year due to non-revenue water in the form of pipe leakages
+	\parencite{Madden2015}.
+	
+	\subsection{South Africa as a case study}
+	Climate change poses threats to the South African agricultural sector, which
+	accounts for a majority of the water usage in the economy, despite most
+	agriculture being rainfed, and plays an important role in providing food,
+	income
+	and employment in the country. 
+	
+	South Africa lies between latitudes 22 degrees  and 35 degrees South and
+	longitudes 16 degrees to 33 degrees East. The country is split into nine
+	provinces and has a wide variety of climates such as arid, temperate and
+	subtropical. However, most of the agricultural activity takes place in arid and
+	semi-arid regions \parencite{Waldner2017}. 
+	
+	A population that is growing at around 2\% per year creates an increasing
+	demand for food and water \parencite{Goldblatt2010}. The demand for water in
+	South Africa is expected to increase by over 50\% between 2015 and 2030,
+	leading
+	to a 17\% deficit between the demand for water and the national supply, which
+	is
+	almost directly related by water mismanagement \parencite{Madden2015}.
+	\parencite{Cammarano2020} suggest that climate change could increase the rate
+	of
+	poverty in South Africa by 2 to 3\%, however, adapting technologies focused
+	around climate change could reduce poverty rates by 12 to 20\%.
+	
+	A unique blend of commercial and subsistence farming sustains around 70\% of
+	the food supply, employment and incomes in the country
+	\parencite{Cammarano2020}. The South African agricultural industry uses around
+	60\% of the water that is used in the country every year, according to
+	\parencite{Madden2015}, however, only around 30\% of the crops produced use
+	irrigation \parencite{Waldner2017}.
+	
+	The two main crop types in South Africa by area planted are maize and wheat.
+	Maize is used as a food staple for a majority of the population and is also
+	essential to the animal sector of the agricultural sector as it is also used as
+	feed. Around 75\% of maize produced in South Africa is planted in the Free
+	State
+	and Northwest provinces \parencite{Waldner2017}. \parencite{Cammarano2020}
+	suggest that maize yields are likely to fall between 12 to 22\% as a result of
+	climate change in South Africa. \parencite{Goldblatt2010} discusses how the
+	annual maize production fluctuates in connection with weather conditions in the
+	country, however, the average production of maize has remained stable in recent
+	years. This is a worrying conclusion as the demand for food is expected to
+	increase as a result of economic and population growth.  
+	
+	\parencite{Cammarano2020} outline the expected effect of climate change in
+	South Africa as:
+	\begin{itemize}
+		\item Decreased rainfall in SA,
+		\item Increased inter-annual weather variability,
+		\item Increased probabilities of droughts,
+		\item Increases in average temperatures and,
+		\item Decrease in water due to changes in land use towards industrial and
+		urban uses
+	\end{itemize}
+	
+	The reliance of a majority of the country?s agriculture on rainfall and because
+	of the inefficient water usage in the economy, South Africa is particularly
+	susceptible to droughts. Especially since droughts are a common occurrence in
+	Southern Africa and have negative impacts on agriculture, the natural
+	environment and therefore, socio-economic well-being
+	\parencite{Tirivarombo2018}.
+	
+	\subsection{Drought}
+	Studies have shown that droughts and floods are the disaster types that have
+	the widest reaching and worst impacts, especially on the African continent.
+	Droughts are the disaster that is associated with the highest proportion of
+	deaths related to natural disasters in Africa, with 46\% of deaths caused by
+	natural hazards resulting from drought related conditions. This shocking number
+	is only worsened by the statistic that 80\% of the people in Africa who were
+	affected by a natural hazard, were impacted by drought \parencite{CRED2019}.
+	Munish Re?s NatCatSERVICE indicates that between 1980 and 2016 floods, droughts
+	and storms were responsible for 90\% of disaster events and 80\% of economic
+	losses during the period \parencite{Cashman2018}.
+	
+	There are four different classifications for droughts. Meteorological drought
+	is when there is a shortage of rainfall leading to a shortage of water. 
+	Agricultural drought occurs when there is insufficient water availability or
+	groundwater to sustain normal farming activity. Hydrological drought is related
+	to insufficient surface and subsurface water levels based on a statistical
+	average. Finally, socio-economic drought occurs when economic goods are in
+	short
+	supply because of weather-related shocks \parencite{UNDRR2015}.
+	
+	Drought disasters are some of the worst of all disaster types, especially in
+	Africa, and threaten the livelihood and development of rural and urban
+	populations. Droughts occur over longer periods of time than most other natural
+	disasters. Droughts are not restricted to or predictably in certain geographic
+	areas such as fault lines or river basins in the way earthquakes or floods are
+	\parencite{UNDRR2015}.  
+	
+	An outline of the issues around analysing droughts, according to
+	\parencite{Tirivarombo2018}, is:
+	\begin{itemize}
+		\item Region specific factors play an important role in the socio-economic
+		impacts of droughts
+		\item Cumulative effects make the start and end harder to determine
+		\item Drought develop slowly
+		\item Only recognised when people and the environment
+		start to feel the impacts
+	\end{itemize}
 
-\section{Model}
+	Although there are several challenges to analysing droughts and their impacts, the severity of these impacts can be avoided with good monitoring systems and an improved understanding of their characteristics. Thus, good early warning systems and drought assessment systems are essential in decision making around drought management policies \parencite{Tirivarombo2018}.
+	\newpage
+	
+	\section{Model}
 	\subsection{Climate variables}
-	Precipitation and temperature are good indicators of drought, as the literature indicates that climate events and droughts are correlated. These indicators can then be converted to drought indices which indicate the duration, magnitude, occurrence and intensity of a drought \parencite{Zargar2011}. Indices used to measure drought can be produced from both a single input variable and a mixture of hydrological variables \parencite{Hao2015}, those produced from hydrological variables are thought to provide results which are more certain, although the most appropriate variables do depend on the type of drought and the situation being addressed.
+	Precipitation and temperature are good indicators of drought, as the literature
+	indicates that climate events and droughts are correlated. These indicators can
+	then be converted to drought indices which indicate the duration, magnitude,
+	occurrence and intensity of a drought \parencite{Zargar2011}. Indices used to
+	measure drought can be produced from both a single input variable and a mixture
+	of hydrological variables \parencite{Hao2015}, those produced from hydrological
+	variables are thought to provide results which are more certain, although the
+	most appropriate variables do depend on the type of drought and the situation
+	being addressed.
 	
 	\subsection{Drought indices}
-	There are many drought indices that exist, such as the Standardised Precipitation Evapotranspiration Index (SPEI), the Weighted Anomaly Standardised Precipitation Index (WASP), the Rainfall Variability Index and the Standardised Soil Moisture Anomaly Index. However, the drought indices most universally used are the Standardised Precipitation Index \parencite{McKee1993} and the Palmer Drought Severity Index \parencite{Palmer1968}, with the SPI being the most popular drought index \parencite{Karabulut2015}. PDSI has precipitation, runoff, moisture supply and evaporation as input variables, while the SPI is based only on precipitation \parencite{VicenteSerrano2010}.
+	There are many drought indices that exist, such as the Standardised
+	Precipitation Evapotranspiration Index (SPEI), the Weighted Anomaly
+	Standardised
+	Precipitation Index (WASP), the Rainfall Variability Index and the Standardised
+	Soil Moisture Anomaly Index. However, the drought indices most universally used
+	are the Standardised Precipitation Index \parencite{McKee1993} and the Palmer
+	Drought Severity Index \parencite{Palmer1968}, with the SPI being the most
+	popular drought index \parencite{Karabulut2015}. PDSI has precipitation,
+	runoff,
+	moisture supply and evaporation as input variables, while the SPI is based only
+	on precipitation \parencite{VicenteSerrano2010}.
 	
-		\subsubsection{SPI vs PDSI}
-		A drought index is multi-scalar when it is capable of accounting for the spatial scale and the various timescales at which droughts occur \parencite{Guttman1998} and since the SPI accounts for cumulative precipitation deficits at various spatial and temporal scales it is multi-scalar in nature \parencite{Hou2007}. The SPI can monitor the three types of drought, namely meteorological, agricultural and hydrological, because it is able to detect drought at various timescales because it possesses temporal flexibility. This is one of the major advantages the SPI has over other indices. PDSI however, is not able to detect drought at various timescales and thus is not multi-scalar in nature. Furthermore, PDSI requires various parameters to determine the index. Thus, not only is the SPI more comparable across regions with different climates than PSDI, but is also less complex to calculate as it only requires precipitation as a parameter. There are concerns however about the effectiveness of the SPI when change in drought associated with climate change is being measured. These concerns are due to the fact that SPI does not deal with changes in evapotranspiration.
-		
-		\subsubsection{Overview of SPI}
-		\parencite{McKee1993} indicates that the SPI was designed to quantify observed precipitation as a standardised departure from a selected probability distribution function that models the precipitation data, where the precipitation data are typically fitted to a gamma distribution and then transformed to a normal distribution. Thus, the SPI values can be interpreted as the number of standard deviations by which the observed precipitation deviates from the long-term mean for a normally distributed random variable, as shown below. So, because the SPI is based on normalised data it is spatially constant allowing drought to be assessed in various regions \parencite{Guttman1998}. As mentioned before the SPI necessitates a single input of the long-term precipitation, which makes it less complicated when compared to other drought indices. The SPI value can then be used to compare and define drought conditions in different areas, and the index gives a reliable estimate of the severity, magnitude and spatial range of droughts. When computing the SPI, it is assumed that rainfall variability initiates droughts but that factors such as temperature are stationary, meaning that they are unchanged over time \parencite{VicenteSerrano2010}. A positive SPI value indicates that the precipitation value is higher than the long-term mean and conversely, a negative SPI value indicates that the precipitation value is lower than the long-term mean. The SPI output values range from -2 to +2, where -2 is extremely dry and +2 is extremely wet.\\
-		
-		$SPI=\frac{x_{i}-\bar{x}}{\sigma}$ \\
-		
-		Where $x_{i}$ represents the precipitation over the chosen period during year $i$, where $\bar{x}$ represents the long-term mean precipitation and $\sigma$ is standard deviation over the chosen period.
-		
+	\subsubsection{SPI vs PDSI}
+	A drought index is multi-scalar when it is capable of accounting for the
+	spatial scale and the various timescales at which droughts occur
+	\parencite{Guttman1998} and since the SPI accounts for cumulative precipitation
+	deficits at various spatial and temporal scales it is multi-scalar in nature
+	\parencite{Hou2007}. The SPI can monitor the three types of drought, namely
+	meteorological, agricultural and hydrological, because it is able to detect
+	drought at various timescales because it possesses temporal flexibility. This
+	is
+	one of the major advantages the SPI has over other indices. PDSI however, is
+	not
+	able to detect drought at various timescales and thus is not multi-scalar in
+	nature. Furthermore, PDSI requires various parameters to determine the index.
+	Thus, not only is the SPI more comparable across regions with different
+	climates
+	than PSDI, but is also less complex to calculate as it only requires
+	precipitation as a parameter. There are concerns however about the
+	effectiveness
+	of the SPI when change in drought associated with climate change is being
+	measured. These concerns are due to the fact that SPI does not deal with
+	changes
+	in evapotranspiration.
+	
+	\subsubsection{Overview of SPI}
+	\parencite{McKee1993} indicates that the SPI was designed to quantify observed
+	precipitation as a standardised departure from a selected probability
+	distribution function that models the precipitation data, where the
+	precipitation data are typically fitted to a gamma distribution and then
+	transformed to a normal distribution. Thus, the SPI values can be interpreted
+	as
+	the number of standard deviations by which the observed precipitation deviates
+	from the long-term mean for a normally distributed random variable, as shown
+	below. So, because the SPI is based on normalised data it is spatially constant
+	allowing drought to be assessed in various regions \parencite{Guttman1998}. As
+	mentioned before the SPI necessitates a single input of the long-term
+	precipitation, which makes it less complicated when compared to other drought
+	indices. The SPI value can then be used to compare and define drought
+	conditions
+	in different areas, and the index gives a reliable estimate of the severity,
+	magnitude and spatial range of droughts. When computing the SPI, it is assumed
+	that rainfall variability initiates droughts but that factors such as
+	temperature are stationary, meaning that they are unchanged over time
+	\parencite{VicenteSerrano2010}. A positive SPI value indicates that the
+	precipitation value is higher than the long-term mean and conversely, a
+	negative
+	SPI value indicates that the precipitation value is lower than the long-term
+	mean. The SPI output values range from -2 to +2, where -2 is extremely dry and
+	+2 is extremely wet.\\
+	
+	$SPI=\frac{x_{i}-\bar{x}}{\sigma}$ \\
+	
+	Where $x_{i}$ represents the precipitation over the chosen period during year
+	$i$, where $\bar{x}$ represents the long-term mean precipitation and $\sigma$
+	is
+	standard deviation over the chosen period.
+	
 	\subsection{Data}
-		\subsubsection{Climate Data}
-		To remedy sparse climate records over the region, this study uses the CRU TS v4.04 from the Climate Research Unit of the University of East Anglia \parencite{Harris2020a}. The data is a constructed 0.5\degree grid of monthly time series starting in 1901 and running through to 2019. The data contains several climate variables, of which this study will use the mean monthly temperature and precipitation.\\
-		
-		The data set is created by using the monthly average values in a base period of 1961 to 1990 to create a set of anomalies for observations over the remaining period by subtracting this mean from the observed data for each month. The gridded data set is then created through interpolation using the Angular Distance Weighting technique\parencite{Harris2020}.\\
-		
-		The choice to use this data set was checked by comparing the data values to ground weather station observations from all over South Africa using a data set published by the University of Cape Town \parencite{CIP}. The study tries to use observations at airports wherever available, to impose a basic form of quality control for the observations used. The study aims to find a $R^2 > 0.5$ between the CRU data and selected ground station observations \parencite{Tirivarombo2018}.
-		
-		\subsubsection{GDP data}
-		The agricultural GDP data is derived from data on the GDP growth rate in South Africa and the contribution of the agricultural sector to the South African GDP over the same period \parencite{WorldBank2019} \parencite{WorldBank2019a}.
-		
-		\subsubsection{Crop specific data}
-		The research uses total production of maize/corn and wheat in South Africa as well as the crop yields of these two sample crops \parencite{PDS2020}.
-		
-	\subsection{Methodology} 
-	This research paper will look to calculate the SPI drought index over the period 1901 to 2019 at different time periods (1 month, 6 month and 12 month) \parencite{Tirivarombo2018}. These index values will then be compared to known events to discuss how accurately the SPI captures drought data during known drought periods based on news reporting of these events. Two events that will be highlighted are the 1904 and the 2015/2016 droughts in the Western Cape province.
+	\subsubsection{Climate Data}
+	To remedy sparse climate records over the region, this study uses the CRU TS
+	v4.04 from the Climate Research Unit of the University of East Anglia
+	\parencite{Harris2020a}. The data is a constructed 0.5\degree grid of monthly
+	time series starting in 1901 and running through to 2019. The data contains
+	several climate variables, of which this study will use the mean monthly
+	temperature and precipitation.\\
 	
-	The SPI drought severity values will then be compared to Agricultural GDP growth and crop yields to check for correlation at a general level. To create further depth to the study the correlations between drought severity and the two mentioned variables will be compared between wetter years and drier years in order to further investigate the relationships. This methodology of using the same country data but for different states under investigation is used in a paper investigating the non-linear relationship of climate change and the economy \parencite{Burke2015}.
-
+	The data set is created by using the monthly average values in a base period
+	of 1961 to 1990 to create a set of anomalies for observations over the
+	remaining
+	period by subtracting this mean from the observed data for each month. The
+	gridded data set is then created through interpolation using the Angular
+	Distance Weighting technique\parencite{Harris2020}.\\
+	
+	The choice to use this data set was checked by comparing the data values to
+	ground weather station observations from all over South Africa using a data set
+	published by the University of Cape Town \parencite{CIP}. The study tries to
+	use
+	observations at airports wherever available, to impose a basic form of quality
+	control for the observations used. The study aims to find a $R^2 > 0.5$ between
+	the CRU data and selected ground station observations
+	\parencite{Tirivarombo2018}.
+	
+	\subsubsection{GDP data}
+	The agricultural GDP data is derived from data on the GDP growth rate in South
+	Africa and the contribution of the agricultural sector to the South African GDP
+	over the same period \parencite{WorldBank2019} \parencite{WorldBank2019a}.
+	
+	\subsubsection{Crop specific data}
+	The research uses total production of maize/corn and wheat in South Africa as
+	well as the crop yields of these two sample crops \parencite{PDS2020}.
+	
+	\subsection{Methodology} 
+	This research paper will look to calculate the SPI drought index over the
+	period 1901 to 2019 at different time periods (1 month, 6 month and 12 month)
+	\parencite{Tirivarombo2018}. These index values will then be compared to known
+	events to discuss how accurately the SPI captures drought data during known
+	drought periods based on news reporting of these events. Two events that will
+	be
+	highlighted are the 1904 and the 2015/2016 droughts in the Western Cape
+	province.
+	
+	The SPI drought severity values will then be compared to Agricultural GDP
+	growth and crop yields to check for correlation at a general level. To create
+	further depth to the study the correlations between drought severity and the
+	two
+	mentioned variables will be compared between wetter years and drier years in
+	order to further investigate the relationships. This methodology of using the
+	same country data but for different states under investigation is used in a
+	paper investigating the non-linear relationship of climate change and the
+	economy \parencite{Burke2015}.
+	
 	\newpage
 	
-		
-
-\printbibliography
-
-\newpage{}
-
-\section*{Appendix\addcontentsline{toc}{section}{Appendix}}
-
-Additional code, output or data here. 
+	\printbibliography
+	
+	\newpage{}
+	
+	\section*{Appendix\addcontentsline{toc}{section}{Appendix}}
+	
+	Additional code, output or data here. 
 \end{document}
+
+
